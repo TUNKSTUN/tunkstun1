@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`bg-stone-200 fixed top-0 w-full xl:w-full z-10 transition duration-500 ease-in-out transform${
+        className={`bg-stone-200 fixed top-0 w-full h-20 xl:w-full z-10 transition duration-500 ease-in-out transform${
           show
           ? "block transition delay-100 hover: translate-y-0"
           : "transition ease-in-out delay-100 -translate-y-12"
@@ -91,7 +91,7 @@ function Navbar() {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={-20}
+                    offset={-40}
                     duration={1000}
                     activeClass="active"
                     className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
@@ -103,7 +103,7 @@ function Navbar() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-40}
                     duration={1000}
                     activeClass="active"
                     className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700"
