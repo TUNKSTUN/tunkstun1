@@ -53,7 +53,7 @@ const [opacity, setOpacity] = useState(0);
     { type: "HTML5/CSS", level: 80 },
   ];
   const colors = {
-    bar: "#50C878",
+    bar: "teal",
     text: "#19171C",
     title: {
       text: "#171717",
@@ -62,13 +62,13 @@ const [opacity, setOpacity] = useState(0);
   };
   
   return (
-    <div id="skills" className="px-5 my-50 space-y-2 h-auto xl:w-full ">
-      <h1 className="xl:text-6xl text-4xl text-green-600 tracking-wider text-end">
+    <div id="skills" className="flex flex-col px-5 my-120 space-y-2 h-auto xl:w-full xl:mb-10 bg-stone-900 p-32">
+      <h1 className="xl:text-5xl text-4xl text-teal-600 text-end font-[Branch] tracking-widest">
         👨‍💻SKILLS
       </h1>
-      <div className="xl:grid grid-cols-2 xl:gap-2 flex flex-col space-y-2 xl:space-y-0">
-        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg font-mono xl:space-y-10 space-y-3 xl:p-5 p-3 rounded-md border-[1px] border-green-400">
-        <h1 className="flex justify-between text-green-600 xl:cursor-default cursor-pointer xl:text-2xl text-lg" onClick={() => setIsOpen(!isOpen)}>&#123; Language Proficiency &#125;:<span className="mt-2 text-center xl:hidden block text-xs"> Tap me👆</span></h1>
+      <div className="xl:grid grid-cols-2 xl:gap-2 flex flex-col space-y-2 xl:space-y-0 xl:mb-10 ">
+        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg font-mono xl:space-y-10 space-y-3 xl:p-5 p-3 rounded-md border-[1px] border-teal-400 py-10">
+        <h1 className="flex justify-between text-teal-600 xl:cursor-default cursor-pointer xl:text-2xl text-lg" onClick={() => setIsOpen(!isOpen)}>&#123; Language Proficiency &#125;:<span className="mt-2 text-center xl:hidden block text-sm"> Tap me👆</span></h1>
   <div className={`hidden xl:block  ${isOpen ? "block" : "hidden"}`}>
     <SkillBar
       className="xl:text-lg text-md "
@@ -89,14 +89,14 @@ const [opacity, setOpacity] = useState(0);
       animationDuration={3000}
     />
   </div>
-          <p className={`tracking-tight text-justify xl:text-sm text-xs text-stone-100 bg-stone-700 p-2 rounded-sm border-[1px] hidden xl:block border-white ${isOpen ? "block" : "hidden"}`}>
+          <p className={`tracking-tight text-justify xl:text-sm text-sm text-stone-100 bg-stone-700 p-2 rounded-sm border-[1px] hidden xl:block border-white ${isOpen ? "block" : "hidden"}`}>
             This data showcases my proficiency in various programming
             languages including Javascript, Java, C++, Python, and HTML5/CSS. I
             have more expertise in Java and C++, demonstrating my strong ability
             in these languages. I also have adequate understanding of
             the other languages, showcasing my versatile coding skills.
           </p>
-          <p className={`tracking-tight text-justify xl:text-sm text-xs text-stone-100 bg-stone-700 p-2 rounded-sm border-[1px] xl:hidden block border-white ${isOpen ? "block" : "hidden"}`}>
+          <p className={`tracking-tight text-justify xl:text-sm text-sm text-stone-100 bg-stone-700 p-2 rounded-sm border-[1px] xl:hidden block border-white ${isOpen ? "block" : "hidden"}`}>
             This data showcases my proficiency in various programming
             languages including Javascript, Java, C++, Python, and HTML5/CSS. I
             have more expertise in Java and C++, demonstrating my strong ability
@@ -104,8 +104,8 @@ const [opacity, setOpacity] = useState(0);
             the other languages, showcasing my versatile coding skills.
           </p>
         </div>
-        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg text-start xl:p-5 p-3 xl:space-y-5 space-y-3 font-mono text-stone-100 rounded-md border-[1px] border-green-400">
-          <h1 className="flex justify-between text-green-600 xl:cursor-default cursor-pointer"onClick={() => setIsOpens(!isOpens)}>&#123; Technologies &#125;:  <span className="mt-2 text-center xl:hidden block text-xs"> Tap me👆</span></h1>
+        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg text-start xl:p-5 p-3 xl:space-y-5 space-y-3 font-mono text-stone-100 rounded-md border-[1px] border-teal-400 py-10">
+          <h1 className="flex justify-between text-teal-600 xl:cursor-default cursor-pointer"onClick={() => setIsOpens(!isOpens)}>&#123; Technologies &#125;:  <span className="mt-2 text-center xl:hidden block text-sm"> Tap me👆</span></h1>
 
           <div className={`xl:block hidden ${isOpens ? "block" : "hidden"}`}>
             <div className="grid grid-cols-7 w-auto h-auto xl:space-y-2 space-y-2 xl:space-x-2 xl:text-5xl text-4xl text-center justify-between">

@@ -1,33 +1,31 @@
 import React from "react";
 
-function about() {
+function About() {
   return (
     <div
       id="about"
-      className="w-full h-screen dark:text-stone-900 dark:bg-stone-200 font-mono py-20"
-    ><br/>
+      className="w-full h-full dark:text-stone-900 dark:bg-stone-200 font-mono py-48"
+    >
+      <br />
       <div className="w-auto h-auto text-center">
-        <div className=" text-center lg:text-6xl xl:text-6xl md:text-4xl text-6xl mx-5 text-green-500 tracking-wider">
-          <h1>ABOUT</h1>
-          <div className="w-auto bg-stone-800 tracking-normal text-justify m-2 xl:p-3 lg:p-3 p-2 text-xs xl:text-lg lg:text-base md:text-lg text-stone-100 xl:px-10 xl:mx-60 border-[1px] border-green-400 rounded-md">
+        <div className=" text-center text-5xl mx-5 text-teal-500 xl:text-5xl ">
+          <h1 className="font-[Branch] tracking-widest">ABOUT</h1>
+          <div className="w-auto bg-stone-800 tracking-normal text-justify m-2 xl:p-3 lg:p-3 p-2 text-sm xl:text-xl lg:text-base md:text-lg text-stone-100 xl:px-10 xl:mx-60 border-[1px] border-teal-400 rounded-md">
             <p>
-              Greetings! I am an Aspiring Software Engineer from
-              India, Honours in B.TECH Computer Science Engineering Degree. As a Practicing
-              Engineer, I have a strong interest in the field of emerging
-              technologies and continuously strive to expand my knowledge and
-              skills. I am an independent and self driven individual who is always
-              seeking new challenges in programming career. My ultimate goal
-              is to maximize my potential and expertise as an Engineer. This
-              website serves as a showcase of my previous projects and
-              accomplishments, as well as an overview of my professional
-              background and experience.
+              Welcome to my portfolio website! I am excited to share my work and
+              professional background with you. As an aspiring Software Engineer
+              with a strong passion for emerging technologies, I am constantly
+              looking for new challenges to enhance my skills and knowledge.
+              Here, you will find a showcase of my previous projects and
+              accomplishments, as well as a glimpse into my professional
+              journey. Thank you for taking the time to visit my portfolio, and
+              I hope you enjoy browsing through my work ❤️❤️❤️❤️.
             </p>
           </div>
-            <span className="text-xs xl:text-base">❤️ Thanks for Visiting! 😊❤️.</span>
         </div>
       </div>
     </div>
   );
 }
 
-export default about;
+export default About;

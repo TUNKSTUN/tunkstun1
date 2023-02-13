@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`bg-stone-200 fixed top-0 w-full h-20 xl:w-full z-10 transition duration-500 ease-in-out transform${
+        className={`bg-stone-200 fixed top-0 w-full h-2 xl:w-full z-10 transition duration-500 ease-in-out transform${
           show
           ? "block transition delay-100 hover: translate-y-0"
           : "transition ease-in-out delay-100 -translate-y-12"
@@ -28,7 +28,7 @@ function Navbar() {
       >
         
         
-        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-stone-200 sticky top-0 z-10 font-mono transition ease-in-out hover:bg-green-600 hover:text-stone-900 hover:text-2xl duration-100 border-b-2 border-stone-100">
+        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-teal-200 sticky top-0 z-10 font-mono transition ease-in-out hover:bg-teal-100 hover:text-stone-900 hover:text-2xl duration-100 border-b-2 hover:border-b-teal-100">
           <div className="justify-center xl:justify-between xl:shrink-0 flex">
             <div className="space-x-5 mt-2 pl-3 text-2xl hover:scale-105 transition ease-in-out hover:cursor-pointer duration-400 hidden xl:block font-[youngr]">
             <Link
@@ -43,11 +43,11 @@ function Navbar() {
                     Yahya
                   </Link>
             </div>
-            <div className=" xl:text-xl text-base m-2 pr-2">
+            <div className=" xl:text-xl text-sm m-2 pr-2">
               <div className="xl:block">
                 <div
                   id="nav"
-                  className="space-x-4 xl:space-x-10 lg:space-x-10 md:space-x-8 justify-center scale-y-110"
+                  className="space-x-2 xl:space-x-10 lg:space-x-10 md:space-x-6 justify-center scale-y-110"
                 >
                   
           
@@ -58,7 +58,7 @@ function Navbar() {
                     offset={-50}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
+                    className="{block} active:text-teal-600 nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Home
                   </Link>
@@ -67,10 +67,10 @@ function Navbar() {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={120}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
+                    className="{block}active:text-teal-600 nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     About
                   </Link>
@@ -79,10 +79,10 @@ function Navbar() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={10}
+                    offset={0}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
+                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Projects
                   </Link>
@@ -91,14 +91,25 @@ function Navbar() {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={100}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
+                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Skills
                   </Link>
 
+                  <Link
+                    to="resume"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={1000}
+                    activeClass="active"
+                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600"
+                  >
+                    Resume
+                  </Link>
                   <Link
                     to="contact"
                     spy={true}
@@ -106,7 +117,7 @@ function Navbar() {
                     offset={-40}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700"
+                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600"
                   >
                     Contact
                   </Link>
