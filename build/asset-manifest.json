@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b81f7d6.css",
-    "main.js": "/static/js/main.a9dcba49.js",
+    "main.css": "/static/css/main.905f7b4f.css",
+    "main.js": "/static/js/main.8f82c485.js",
     "static/js/787.a3bfe649.chunk.js": "/static/js/787.a3bfe649.chunk.js",
-    "static/media/Anim.gif": "/static/media/Anim.245bf56f50266c163f54.gif",
+    "static/media/Water_1.mp4": "/static/media/Water_1.89f69a58e29c5a51e6ff.mp4",
+    "static/media/Anim.gif": "/static/media/Anim.2afb47710163eb516086.gif",
+    "static/media/white.mp4": "/static/media/white.b674089417293949cb2b.mp4",
+    "static/media/leaf.gif": "/static/media/leaf.3d000578f32019ae6991.gif",
+    "static/media/fish.gif": "/static/media/fish.5a8077d98e29c7ded3b3.gif",
     "static/media/blue.gif": "/static/media/blue.c6470f975beae5b7b142.gif",
     "static/media/ALISA.jpg": "/static/media/ALISA.0a43cfceb4d69ce3b805.jpg",
     "static/media/ETH.jpg": "/static/media/ETH.ad67613dcbdf56711acd.jpg",
@@ -12,21 +16,23 @@
     "static/media/Anim2.png": "/static/media/Anim2.60b9d27420c311a391c7.png",
     "static/media/0.jpg": "/static/media/0.6e5a2ae23a4c3b3a6033.jpg",
     "static/media/YoungRich.ttf": "/static/media/YoungRich.e55054ac121da020135a.ttf",
-    "static/media/CS.png": "/static/media/CS.b95e14c5f95033c2cac8.png",
     "static/media/az-900.png": "/static/media/az-900.dd49b3c54249c87368c6.png",
-    "static/media/NB.png": "/static/media/NB.5eec244981ee20af43c2.png",
+    "static/media/room.png": "/static/media/room.3e358370b4e41ec71ff1.png",
+    "static/media/CS.png": "/static/media/CS.e5f9cf47b22a8f417732.png",
+    "static/media/NB.png": "/static/media/NB.dd15b51a5c6be4f84e14.png",
     "static/media/lvl1.png": "/static/media/lvl1.dd99a8e61f69830b6ee4.png",
     "static/media/az900.png": "/static/media/az900.e62fbcf30749a13cb2a6.png",
     "static/media/lvl3.png": "/static/media/lvl3.46c7359a6835b4f3cfb6.png",
     "static/media/lvl2.png": "/static/media/lvl2.cb973ddfcb590d261b54.png",
+    "static/media/ccna.png": "/static/media/ccna.17102a8218a337da901a.png",
     "static/media/CCNA.svg": "/static/media/CCNA.1d8568dddc6f0f96a8866ed4af81fa28.svg",
     "index.html": "/index.html",
-    "main.2b81f7d6.css.map": "/static/css/main.2b81f7d6.css.map",
-    "main.a9dcba49.js.map": "/static/js/main.a9dcba49.js.map",
+    "main.905f7b4f.css.map": "/static/css/main.905f7b4f.css.map",
+    "main.8f82c485.js.map": "/static/js/main.8f82c485.js.map",
     "787.a3bfe649.chunk.js.map": "/static/js/787.a3bfe649.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b81f7d6.css",
-    "static/js/main.a9dcba49.js"
+    "static/css/main.905f7b4f.css",
+    "static/js/main.8f82c485.js"
   ]
 }

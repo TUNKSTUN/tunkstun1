@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/about.js";
@@ -6,33 +6,40 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/footer";
-import { render } from "react-dom";
-import { Parallax, ParallaxBackground } from "react-parallax";
-import Blue from './Assets/blue.gif'
+import { Parallax } from "react-parallax";
+import Blue from "./Assets/blue.gif";
 import Resume from "./Components/resume";
 
-const DarkModeContext = createContext();
+import Leaf from "./Assets/leaf.gif";
 
 function App() {
-  const [darkToggle, setDarkToggle] = useState(false);
   return (
-    <DarkModeContext.Provider value={{ darkToggle, setDarkToggle }}>
-
+    <>
       <Navbar />
-    <div className=" bg-stone-900 text-stone-900 w-full px-5 overflow-x-hidden "> 
-  <Parallax bgImage={Blue} strength={100}>
-      <Hero />
-    </Parallax>
-      <About />
-      <Projects />
-      <Skills />
-      <Resume/>
-      <Contact />
-      <Footer/>
-    </div>
-    </DarkModeContext.Provider>
+      <div className="bg-stone-900 text-stone-900 w-full xl:px-10 lg:px-10 p-2">
+        <Parallax
+          bgImage={Blue}
+          strength={200}
+          className="border-none mt-10 w-full h-full"
+        >
+        </Parallax>
+          <Hero />
+
+        <About />
+
+        <Parallax bgImage={Leaf} strength={200} blur={5}>
+         <div className="backdrop-blur-lg">
+          <Projects />
+          <Skills />
+          </div> 
+        </Parallax>
+
+        <Resume/>
+          <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 
 export default App;
-

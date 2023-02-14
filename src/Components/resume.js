@@ -8,55 +8,61 @@ import Anim2 from "../Assets/Anim2.png";
 import AZ from "../Assets/az-900.png";
 import { useState } from "react";
 import {FaFilePdf } from "react-icons/fa";
+import Room  from "../Assets/room.png"
+import { Parallax, ParallaxBackground } from "react-parallax";
 
 function Resume() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div id="resume" className="text-center justify-center flex-col h-full mt-20 ">
+    <div id="resume" className="flex text-center justify-between space-x-40 mt-10 h-full px-40 bg-transparent  my-10 items-center">
+      <div className="w-1/2 flex-col flex text-center items-center">
+
       <h1
-        className="xl:text-10xl text-5xl border-b-0 font-bold tracking-widest font-[Branch] text-teal-600 text-center border-white transition ease-out hover:border-b-2 hover:scale-105 hover:text-teal-300 hover:cursor-pointer delay-100  hover:border-b-teal-300"
+        className="xl:text-10xl text-5xl justify-start items-center text-centerflex font-bold tracking-widest font-[Branch] text-teal-200 text-start transition ease-out hover:scale-105 hover:text-teal-300 hover:cursor-pointer delay-100"
         onClick={() => setIsOpen(!isOpen)}
-      >
+        >
         RESUME
-        <h1 className="bg-stone-900 text-sm w-auto h-10 hidden xl:block">TAP ME👆</h1>
+        <h1 className="bg-stone-900 text-sm w-auto h-10 hidden text-center xl:block">TAP TO DISPLAY👆</h1>
       </h1>
-        <p className="hidden xl:block text-5xl text-teal-600 font-[branch]">
+        <p className="hidden xl:block text-5xl text-teal-200 font-[branch]">
             OR
          </p>
-      <button type="button" alt="resume" className="my-2 px-10 bg-stone-900 font-mono w-auto h-auto p-2 text-white border-2 border-teal-500 transition ease-out delay-100 hover:border-b-teal-600 hover:bg-teal-100 hover:text-stone-900 ">
+      <button type="button" alt="resume" className="1 px-10 bg-stone-900 font-mono 60 h-auto p-2 text-white border-2 border-teal-200 transition ease-out delay-100 hover:border-b-teal-600 hover:bg-teal-100 hover:text-stone-900 ">
         <a href="https://drive.google.com/file/d/1eRUQuMU51QPzZeFL4cjI_FkVLSRktJjt/view?usp=sharing" className="gap-2 text-lg flex italic">Download <FaFilePdf className="text-xl"/> </a>
       </button>
+        </div>
+        
+
       <div
-        id="resume"
-        className={`xl:w-full w-auto min-h-full xl:justify-center flex-col font-mono px-2 xl:px-[350px] justify-start block xl:hiddden ${
-          isOpen ? "block" : "hidden"
-        }`}
-      >
-        <div
-          className="bg-amber-100 shadow-2xl shadow-teal-500 text-orange-900  flex-col w-auto xl:w-[600px] h-full text-center py-8 transition ease-out hover:shadow-md hover:drop-shadow-lg hover:shadow-teal-100 xl:hover:scale-150 hover:scale-105 hover:cursor-pointer hidden xl:block"
-          href=""
+        className={` xl:w-1/2 lg:w-1/2 w-full shadow-inner  h-auto flex  font-mono  delay-100 duration-500 items-center justify-center relative mt-10`}
         >
+        <img src={Room} alt='room' className=" bg-local absolute p-3 w-[500px] bg-transparent "/>
+        <div
+          className={`flex-wrap p-2 border-teal-400 border-2 bg-orange-100 text-orange-900 justify-center hover:scale-105 w-[600px] h-auto text-center transition ease-out hover:shadow-md hover:drop-shadow-lg hover:shadow-teal-100  hover:cursor-pointer hidden xl:block ${
+            isOpen ? "transition duration-200 ease-in-out transform -translate-x-100 scale-x-100" : " duration-200 transition ease-in-out transform  translate-x-0 scale-0"
+          }`}
+          >
           <h1 className="text-3xl font-bold">YAHYA</h1>
           <p className="font-thin text-xs">
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdnSDwRJkRkfqsrcqThPLwqrQFFfBxSpLRttkCwdNmwMHVbRkvVWwKSXKttMLbQGMJLgvtxmvbQcGgdtPfJJsfXzcMWXdgvPdjtjPJhFVHSjGwjV">
-              johnwick4learning@gmail.com
+              Email: johnwick4learning@gmail.com
             </a>
-            <span>|</span>
+            <span> | </span>
             <a href="https://www.github.com/TUNKSTUN">github.com/TUNKSTUN"</a>
-            <span>|</span> 8096278589 <span>|</span>
+            <span> | </span>Phone: - <span>|</span>
             <a href="https://www.linkedin.com/in/yahya24/">
-              linkedin.com/in/yahya24
+                <span> </span>Social: linkedin.com/in/yahya24
             </a>
           </p>
-          <div className="flex bg-inherit h-auto m-2">
+          <div className="flex bg-inherit h-auto m-1">
             <div className="flex-col flex w-full h-auto p-2">
-              <div className="w-full border-2 border-dashed border-amber-900 h-auto flex  my-[2px]">
+              <div className="w-full border-2 border-dashed border-gray-900 h-auto flex  my-[2px]">
                 <h1 className="text-xl text-start p-2 font-bold">
                   ABOUT:
                   <img
-                    src={Anim2}
+                    src={Anim2} alt="image"
                     className="w-[100px] h-[100px] m-1 float-left border-2 border-stone-800"
-                  />
+                    />
                   <p className="text-ms text-justify text-stone-900 tracking-tighter leading-tight">
                     Computer Science Student from India, Hyderabad with a deep
                     passion for Azure Cloud, Java Development and Network
@@ -69,11 +75,11 @@ function Resume() {
                   </p>
                 </h1>
               </div>
-              <div className="w-full border-2 border-dashed border-amber-900 h-auto flex p-1 my-[2px]">
+              <div className="w-full border-2 border-dashed border-gray-900 h-auto flex p-1 my-[2px]">
                 <h1 className="text-xl text-start p-2 font-bold">
                   EDUCATION:
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-sm font-bold leading-tight text-amber-900">
+                    <h1 className="text-sm font-bold leading-tight text-orange-900">
                       1. GLOBAL INSTITUTE OF ENGINEERING & TECHNOLOGY
                     </h1>
                     <p className="italic font-bold">
@@ -85,7 +91,7 @@ function Resume() {
                     </p>
                   </p>
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-sm font-bold leading-tight text-amber-900">
+                    <h1 className="text-sm font-bold leading-tight text-orange-900">
                       2. SRI CHAITANYA JUNIOR KALASALA
                     </h1>
                     <p className="italic">
@@ -93,7 +99,7 @@ function Resume() {
                     </p>
                   </p>
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-sm font-bold leading-tight text-amber-900">
+                    <h1 className="text-sm font-bold leading-tight text-orange-900">
                       3. SRI CHAITANYA TECHNO SCHOOL
                     </h1>
                     <p className="italic">
@@ -102,11 +108,11 @@ function Resume() {
                   </p>
                 </h1>
               </div>
-              <div className="w-full border-2 border-dashed border-amber-900 h-auto flex p-1 my-[2px]">
-                <h1 className="text-xl text-start p-2 font-bold">
+              <div className="w-full border-2 border-dashed border-gray-900 h-auto flex my-[2px] py-1 px-3">
+                <h1 className="text-xl text-start font-bold">
                   PROJECTS:
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-base font-bold leading-tight text-amber-900">
+                    <h1 className="text-base font-bold leading-tight text-orange-900">
                       1. RAKHT-SPOT | BLOOD DONATION ANDROID APPLICATION
                     </h1>
                     <p className="italic">
@@ -121,7 +127,7 @@ function Resume() {
                     </p>
                   </p>
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-base font-bold leading-tight text-amber-900">
+                    <h1 className="text-base font-bold leading-tight text-orange-900">
                       2. ALISA | KIVY BASED DESKTOP VOICE ASSISTANT
                     </h1>
                     <p className="italic">
@@ -135,7 +141,7 @@ function Resume() {
                     </p>
                   </p>
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-base font-bold leading-tight text-amber-900">
+                    <h1 className="text-base font-bold leading-tight text-orange-900">
                       3. TUNKSTUN.WEB.APP | PORTFOLIO WEBSITE
                     </h1>
                     <p className="italic">September 2022 – December 2022</p>
@@ -146,7 +152,7 @@ function Resume() {
                     </p>
                   </p>
                   <p className="text-ms text-justify leading-normal text-stone-900 tracking-tighter flex-col">
-                    <h1 className="text-base font-bold leading-tight text-amber-900">
+                    <h1 className="text-base font-bold leading-tight text-orange-900">
                       3. ETHIHAX | BLOG WEBSITE
                     </h1>
                     <p className="italic">(Working Project)</p>
@@ -158,8 +164,8 @@ function Resume() {
                   </p>
                 </h1>
               </div>
-              <div className="w-full border-2 border-dashed border-amber-900 h-auto flex p-1 my-[2px]">
-                <h1 className="text-xl text-start p-2 font-bold">
+              <div className="w-full border-2 border-dashed border-gray-900 h-auto flex my-[2px] py-0 px-3">
+                <h1 className="text-xl text-start font-bold">
                   ACHIEVEMENTS:
                   <p className="text-ms italic text-justify text-stone-900 leading-tight tracking-tighter">
                     Rewarded for Successfully Coordinating Debugging Event on
@@ -168,31 +174,31 @@ function Resume() {
                 </h1>
               </div>
             </div>
-            <div className="xl:w-1/2  border-none bg-gradient-to-b from-amber-900 via-amber-700 to-yellow-900 h-full shadow-xl shadow-gray-500">
-              <div className="w-auto bg-white h-auto m-2 text-center p-1 flex justify-around text-ms">
+            <div className="xl:w-1/2  border-none bg-gradient-to-b from-orange-900 via-orange-700 to-orange-900 h-full shadow-xl shadow-gray-500">
+              <div className="w-auto bg-transparent h-auto 1 text-center p-1 flex justify-around text-ms">
                 <a href="https://www.credly.com/badges/73af2e55-2f1b-4871-8625-010db37101be/public_url">
                   <img
-                    src={CCNA}
+                    src={CCNA} 
                     alt="ccna"
-                    className="rounded-full border-amber-500 border-2 w-[70px] flex"
-                  />
+                    className="rounded-full border-amber-400 border-2 w-[70px] flex bg-white"
+                    />
                 </a>
                 <a href="https://www.credly.com/badges/e4c9d7c3-b137-40a7-99e3-870c1b313df9/public_url">
                   <img
-                    src={AZ}
+                    src={AZ} 
                     alt="ccna"
-                    className="rounded-full border-amber-500 border-2 w-[70px] flex p-1"
-                  />
+                    className="rounded-full border-amber-400 border-2 w-[70px] flex p-1 bg-white"
+                    />
                 </a>
               </div>
-              <div className=" text-white  m-2 text-xs p-2">
+              <div className=" text-white  1 text-xs p-2">
                 <div
                   className="flex-col justify-start text-start
-                "
-                >
+                  "
+                  >
                   <h1 className="text-sm tracking-widest">SKILLS</h1>
-                  <p className="text-justify leading-1 tracking-tighter">
-                    <h3 className="leading-5 text-ms">TECHNICAL SKILLS:</h3>
+                  <p className="text-justify tracking-tighter">
+                    <h3 className=" text-ms">TECHNICAL SKILLS:</h3>
                     Azure Cloud, Networking, Java, React, Firebase, Python,
                     C/C++, Routing, Switching, Cloud, Computing, MS-Word,
                     MS-Excel, Linux Basics, Virtualization, NLP, TSHOOT, VScode,
@@ -219,16 +225,16 @@ function Resume() {
                   </p>
                 </div>
               </div>
-              <div className=" text-white  m-2 text-xs p-2">
+              <div className=" text-white  m-1 text-xs p-2">
                 <div
                   className="flex-col justify-start text-start
-                "
-                >
-                  <h1 className="text-sm flex-col flex leading-2">
+                  "
+                  >
+                  <h1 className="text-sm flex-col flex ">
                     CERTIFICATIONS
                   </h1>
 
-                  <div className="flex space-x-2 leading-2">
+                  <div className="flex space-x-2 ">
                     <p className="text-justify">1.</p>
                     <p>CISCO CERTIFIED NETWORK ASSOCIATE (CCNA)</p>
                     <p className="text-end">December 2022 to December 2025</p>
@@ -255,12 +261,12 @@ function Resume() {
                   </div>
                 </div>
               </div>
-              <div className="text-white m-2 text-xs p-2">
+              <div className="text-white m-1 text-xs p-2">
                 <div
                   className="flex-col justify-start text-start text-jus
-                "
-                >
-                  <h1 className="text-sm tracking-widest leading-2">
+                  "
+                  >
+                  <h1 className="text-sm tracking-widest">
                     WORKSHOPS
                   </h1>
                   <div className="text-justify text-xs flex flex-col tracking-tighter">
@@ -284,38 +290,38 @@ function Resume() {
                   </div>
                 </div>
                 <div
-                  className="flex-col justify-start text-start text-justify
-                "
-                >
-                  <h1 className="text-sm tracking-widest leading-2">
+                  className="flex-col justify-start text-justify
+                  "
+                  >
+                  <h1 className="text-sm tracking-widest ">
                     CODING PROFICIENCY
                   </h1>
                   <div className="text-justify text-xs flex flex-col tracking-tighter">
                     <div className="text-start text-xs flex space-x-2 p-2">
                       <p>Java:</p>
                       <p>
-                        <img src={lvl1} />
+                        <img src={lvl1}  alt="image" />
                       </p>
                     </div>
                     <div className="text-start text-xs flex  space-x-2 p-2">
                       <p>JS/TS:</p>
                       <p>
-                        <img src={lvl2} />
+                        <img src={lvl2}  alt="image"/>
                       </p>
                     </div>
                     <div className="text-start text-xs flex  space-x-2 p-2">
                       <p>PYTHON:</p>
                       <p>
-                        <img src={lvl3} />
+                        <img src={lvl3} alt="image"/>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
                   className="flex-col justify-start text-start text-jus
-                "
-                >
-                  <h1 className="text-sm tracking-widest leading-2">
+                  "
+                  >
+                  <h1 className="text-sm tracking-widest">
                     LANGUAGES
                   </h1>
                   <div className="text-justify text-xs flex flex-col tracking-tighter">
@@ -325,7 +331,7 @@ function Resume() {
                         Professional Level Proficiency
                       </p>
                     </div>
-                    <div className="text-justify text-xs flex space-x-2 leading-2">
+                    <div className="text-justify text-xs flex space-x-2 ">
                       <p>HINDI/URDU:</p>
                       <p>Native Proficienct</p>
                     </div>
@@ -336,6 +342,7 @@ function Resume() {
           </div>
         </div>
       </div>
+                
       
     </div>
   );

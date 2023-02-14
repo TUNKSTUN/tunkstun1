@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 function Navbar() {
   const [show, setShow] = useState(true);
-  const [darkToggle, setDarkToggle] = useState(false);
+
   
 
   useEffect(() => {
@@ -23,14 +23,14 @@ function Navbar() {
         className={`bg-stone-200 fixed top-0 w-full h-2 xl:w-full z-10 transition duration-500 ease-in-out transform${
           show
           ? "block transition delay-100 hover: translate-y-0"
-          : "transition ease-in-out delay-100 -translate-y-12"
+          : "transition ease-in-out delay-100 -translate-y-10 hover:-translate-y-0 hover:cursor-pointer"
         }`}
       >
         
         
-        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-teal-200 sticky top-0 z-10 font-mono transition ease-in-out hover:bg-teal-100 hover:text-stone-900 hover:text-2xl duration-100 border-b-2 hover:border-b-teal-100">
+        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-teal-200 sticky top-0 z-50 font-mono transition ease-in-out hover:bg-teal-200 hover:text-stone-900 hover:text-2xl duration-100 border-b-2 hover:border-b-teal-100">
           <div className="justify-center xl:justify-between xl:shrink-0 flex">
-            <div className="space-x-5 mt-2 pl-3 text-2xl hover:scale-105 transition ease-in-out hover:cursor-pointer duration-400 hidden xl:block font-[youngr]">
+            <div className="space-x-5 mt-2 pl-3 text-2xl xl:hover:scale-110 transition ease-in-out hover:cursor-pointer duration-400 hidden xl:block font-[youngr]">
             <Link
                     to="hero"
                     spy={true}
@@ -38,16 +38,16 @@ function Navbar() {
                     offset={-50}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-stone-700 "
+                    className="{block} nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-stone-700 "
                   >
                     Yahya
                   </Link>
             </div>
-            <div className=" xl:text-xl text-sm m-2 pr-2">
+            <div className=" xl:text-2xl md:text-base lg:text-xl text-sm m-2 pr-2">
               <div className="xl:block">
                 <div
                   id="nav"
-                  className="space-x-2 xl:space-x-10 lg:space-x-10 md:space-x-6 justify-center scale-y-110"
+                  className="space-x-3 xl:space-x-16 lg:space-x-10 md:space-x-6 justify-center transition ease-in-out duration-100 xl:hover:scale-y-110"
                 >
                   
           
@@ -55,10 +55,10 @@ function Navbar() {
                     to="hero"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-120}
                     duration={1000}
                     activeClass="active"
-                    className="{block} active:text-teal-600 nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
+                    className="{block} active:text-teal-600 nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Home
                   </Link>
@@ -67,10 +67,10 @@ function Navbar() {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={120}
+                    offset={0}
                     duration={1000}
                     activeClass="active"
-                    className="{block}active:text-teal-600 nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
+                    className="{block}active:text-teal-600 nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     About
                   </Link>
@@ -79,10 +79,10 @@ function Navbar() {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-60}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
+                    className="{block} nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Projects
                   </Link>
@@ -91,10 +91,10 @@ function Navbar() {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={100}
+                    offset={-40}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600 "
+                    className="{block} nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600 "
                   >
                     Skills
                   </Link>
@@ -103,10 +103,11 @@ function Navbar() {
                     to="resume"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={60}
                     duration={1000}
+                    scrolling={true}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600"
+                    className="{block} nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600"
                   >
                     Resume
                   </Link>
@@ -114,10 +115,10 @@ function Navbar() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={-60}
                     duration={1000}
                     activeClass="active"
-                    className="{block} nav-class transition ease-in-out hover:scale-110 cursor-pointer hover:text-teal-600"
+                    className="{block} nav-class transition ease-in-out xl:hover:scale-110 cursor-pointer hover:text-teal-600"
                   >
                     Contact
                   </Link>

@@ -13,11 +13,11 @@ module.exports = {
       '3xl': '1.953rem',
       '4xl': '2.441rem',
       '5xl': '3.052rem',
-      '10xl': '5.052rem',
+      '10xl': '4.052rem',
     },
     screens: {
       
-        'sm': {'min': '576px', 'max': '767px'},
+        'sm': {'min': '300px', 'max': '767px'},
         'md': {'min': '768px', 'max': '991px'},
         'lg': {'min': '992px', 'max': '1199px'},
         'xl': {'min': '1200px'},
@@ -30,7 +30,14 @@ module.exports = {
 
         // Complex site-specific column configuration
         'footer': '200px minmax(900px, 1fr) 100px',
-      }
+      },
+      crollbarWidth: {
+        thin: '6px',
+      },
+      scrollbarColor: {
+        base: 'rgba(0, 0, 0, 0.2)',
+        hover: 'rgba(0, 0, 0, 0.4)',
+      },
     },
   },
   plugins: [],
