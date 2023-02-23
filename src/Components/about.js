@@ -1,15 +1,18 @@
 import React from "react";
 
+
 function About() {
   return (
+   
     <div
-      id="about"
-      className="w-full h-full dark:text-stone-900 dark:bg-stone-200 font-mono py-48 border-t-2 border-teal-300 mt-10"
+    id="about"
+    className="relative w-full h-full font-mono pt-32 pb-80 border-t-2 border-teal-100 mt-10 bg-transparent"
     >
+
       <br />
       <div className="w-auto h-auto text-center">
-        <div className=" text-center text-5xl mx-5 text-teal-500 xl:text-5xl xl:px-32">
-          <h1 className="font-[Branch] tracking-widest">ABOUT</h1>
+        <div className=" text-center text-5xl mx-5 text-teal-100 xl:text-5xl xl:px-20">
+          <h1 className="font-[Branch] tracking-widest">About</h1>
           <div className="w-auto bg-stone-800 tracking-normal text-justify m-2 xl:p-3 lg:p-3 p-2 text-sm xl:text-xl lg:text-base md:text-lg text-stone-100 xl:px-10 xl:mx-60 border-[1px] border-teal-400 rounded-md transition ease-in-out duration-300 hover:shadow-xl hover:shadow-teal-900 hover:scale-105">
             <p>
               Welcome to my portfolio website! I am excited to share my work and
@@ -25,6 +28,7 @@ function About() {
         </div>
       </div>
     </div>
+      
   );
 }
 

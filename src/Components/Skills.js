@@ -53,8 +53,8 @@ function Skills() {
       id="skills"
       className="flex flex-col px-5 space-y-2 h-auto xl:w-full  bg-transparent p-12 backdrop-blur-lg"
     >
-      <h1 className="xl:text-10xl text-4xl text-teal-400  text-center font-[Branch]">
-        👨‍💻SKILLS
+      <h1 className="xl:text-10xl text-4xl text-teal-100  text-center font-[Branch]">
+        👨‍💻Skills
       </h1>
       <div className="xl:grid grid-cols-2 xl:gap-2 flex flex-col space-y-2 xl:space-y-0 xl:mb-10 ">
         <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg font-mono xl:space-y-10 space-y-3 xl:p-5 p-3 rounded-md border-[1px] border-teal-400 py-10 transition ease-in-out duration-300 hover:border-white">
@@ -124,33 +124,33 @@ function Skills() {
           </h1>
 
           <div className={`xl:block hidden ${isOpens ? "block" : "hidden"}`}>
-            <div className="grid grid-cols-7 w-auto h-auto xl:space-y-2 space-y-2 xl:space-x-2 xl:text-5xl text-4xl text-center justify-between">
-              <SiReact />
-              <SiAzuredevops />
-              <SiCisco />
-              <SiNextdotjs />
-              <SiAndroidstudio />
-              <SiElectron />
-              <SiMysql />
-              <SiPostman />
-              <SiSelenium />
-              <SiSpring />
-              <SiVisualstudiocode />
-              <SiTailwindcss />
-              <SiCplusplus />
-              <SiFirebase />
-              <SiApachemaven />
-              <SiGradle />
-              <SiJava />
-              <SiVirtualbox />
-              <SiKalilinux />
-              <SiUbuntu />
-              <SiMicrosoft />
-              <SiMicrosoftazure />
-              <SiWindows />
-              <SiWireshark />
-              <SiNodedotjs />
-              <SiDocker />
+            <div className="grid grid-cols-7 w-auto h-auto xl:space-x-2 gap-4 xl:text-5xl text-4xl text-center justify-around">
+              <SiReact className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-180 "/>
+              <SiAzuredevops className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiCisco className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiNextdotjs className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiAndroidstudio className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiElectron className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiMysql className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiPostman className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiSelenium className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiSpring className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiVisualstudiocode className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiTailwindcss className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiCplusplus className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiFirebase className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiApachemaven className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiGradle className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiJava className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiVirtualbox className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiKalilinux className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiUbuntu className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiMicrosoft className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiMicrosoftazure className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiWindows className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiWireshark className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiNodedotjs className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
+              <SiDocker className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-125 hover:rotate-3 "/>
             </div>
           </div>
           <div className={`xl:hidden block ${isOpens ? "block" : "hidden"}`}>

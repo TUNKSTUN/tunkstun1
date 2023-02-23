@@ -1,7 +1,7 @@
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Fan from '../Assets/fish.gif'
+import Fan from '../Assets/comp.gif'
 import Video from "../Assets/Video/white.mp4"
 const Contact = () => {
   const form = useRef();
@@ -19,29 +19,29 @@ const Contact = () => {
       });
   };
   return (
-    <div className=' relative w-full h-full justify-center flex p-10'>
+    <div className=' relative w-full h-full justify-center flex'>
       <video className="absolute bottom-0 left-0 w-full h-full object-cover" autoPlay loop muted>
         <source src={Video} type="video/mp4" />
       </video>
 
            
-    <div id="contact" className=' w-full h-full justify-start mb-10 xl:my-20 mt-10'><br/>
-        <div className=' w-auto h-auto xl:flex bg-transparent border-2 border-teal-300 p-2 rounded-lg justify-around backdrop-blur-md '>
-        <div className='sm:flex-wrap md:flex-wrap text-teal-300 xl:tracking-widest text-center font-[Branch] flex w-full space-x-2 justify-center'>
+    <div id="contact" className=' w-full h-auto justify-start p-10'><br/>
+        <div className=' w-auto h-auto xl:flex bg-transparent border-2 border-teal-100 p-2 rounded-lg justify-around backdrop-blur-md opacity-95'>
+        <div className='bg-transparent xl:flex rounded-xl justify-between w-full h-full p-5 space-y-2 lg:px-40'>
         
-        <div className='xl:w-1/2 p-5 xl:flex flex-col px-12 md:px-32 lg:px-10 xl:px-5 bg-transparent w-full h-auto justify-center backdrop-blur-lg rounded-md items-center '>
-          <img src={Fan} className='rounded-full xl:max-w-xl max-w-full p-2 md:min-h-max lg:h-auto xl:h-auto border-teal-100 border-2 shadow-2xl shadow-gray-900 lg:mt-10'/>
+        <div className='flex lg:flex bg-transparent xl:w-1/2  lg:w-full lg:my-5 h-auto  justify-center backdrop-blur-lg rounded-md items-center '>
+          <img src={Fan} className='h-full flex rounded-full xl:max-w-xl xl:flex lg:block xl:w-[500px] w-[300px] p-2 md:min-h-full lg:h-auto xl:h-auto shadow-2xl shadow-gray-900 lg:mt-10'/>
         </div>
-        <div className='border-2 xl:w-1/2 lg:min-w-xl  xl:flex w-full lg:p-auto flex-col bg-teal-200 backdrop-blur-xl rounded-xl justify-center xl:p-5 p-2 text-sm text-mono xl:text-xl text-white tracking-wider text-start xl:space-y-5 '>
-          <h1 className='text-center md:text-5xl text-3xl xl:text-10xl xl:tracking-widest lg:text-4xl text-teal-900'>CONTACT</h1>
-          <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-3 xl:my-5 my-2 xl:p-10 px-5 md:px-24 lg:px-8 text-teal-900' >
+        <div className=' border-2 flex xl:w-1/2 lg:w-full lg:flex p-auto  bg-teal-900 flex-col backdrop-blur-xl border-teal-900 rounded-xl justify-center p-2 text-sm text-mono xl:text-xl text-white tracking-wider text-start xl:space-y-5 '>
+          <form ref={form} onSubmit={sendEmail} className='lg:p-5 rounded-xl bg-teal-100 flex flex-col space-y-2 xl:p-28 px-5 md:px-24 lg:px-8 text-teal-900 ' >
+          <h1 className='text-center justify-center md:text-5xl text-3xl xl:text-5xl font-[youngr] font-bold lg:text-2xl text-teal-900 flex mt-3'>Contact</h1>
             <label>Name</label>
             <input type='name' name="user_name" className='p-2 font-mono w-auto h-auto border-none rounded-md bg-teal-900 text-white' />
             <label>Email</label>
             <input type='email' name="user_email"   className='p-2  font-mono w-auto h-auto border-none rounded-md bg-teal-900 text-white'/>
             <label>Message</label>
-            <textarea type='message' name="message" className='font-mono w-auto h-auto border-none rounded-lg bg-teal-900 text-white'/>
-            <button type="submit" alt="submit" name="message" value="Send" className='bg-stone-900 border-2 xl:text-2xl text-xl px-2 w-40 border-teal-100 text-white transition rounded-md hover:text-black hover:bg-teal-100'>Submit</button>
+            <textarea type='message' name="message" resize='none' className='p-2 font-mono w-auto h-auto border-none rounded-lg bg-teal-900 text-white'/>
+            <button type="submit" alt="submit" name="message" value="Send" className='bg-teal-900 border-2 xl:text-xl text-xl p-2 w-40 border-teal-200 text-white transition ease-in-out duration-300 rounded-full hover:text-black hover:border-teal-700 hover:bg-teal-100 hover:scale-105'>Submit</button>
           </form>
         </div>
         </div>

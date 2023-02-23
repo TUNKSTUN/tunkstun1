@@ -27,19 +27,20 @@ function Hero() {
         <source src="/Assets/Video/Waves.m4v" type="Video/mp4: codecs=hvc1"/>
         <source src="/Assets/Video/Waves.webm" type="Video/webm; codecs=vp9"/>
       </video> */}
-      <div className=" flex-col xl:flex text-center xl:space-y-2 items-center lg:px-40 xl:px-10 space-y-2 lg:space-y-1 justify-center lg:pt-8  drop-shadow-xl backdrop-blur-lg border-teal-400 border-2 rounded-md transition ease-in-out duration-500 hover:border-white p-10 px-20 lg:[300px]">
+      <div className=" flex-col xl:flex text-center xl:space-y-2 items-center lg:px-40 xl:px-10 space-y-2 lg:space-y-1 justify-center lg:pt-8  drop-shadow-xl backdrop-blur-lg shadow-lg shadow-black rounded-md transition ease-in-out duration-500 hover:border-white p-10 px-20 lg:[300px]">
       <img
-          className=" flex  p-2 min-h-full md:min-w-[400px] lg:h-auto xl:h-auto justify-center items-center h-auto rounded-full xl:hidden min-w-md md:flex md:m-auto backdrop-blur-lg border-2-gray-500 md:[200px] w-[400px]"
+          className=" flex  min-h-full md:min-w-[400px] lg:h-auto xl:h-auto justify-center items-center h-auto rounded-full xl:hidden min-w-md md:flex md:m-auto backdrop-blur-lg border-2-gray-500 md:[200px] w-[400px]"
           src={Art} alt="image"
         />
-        <h1 className="font-[Branch] tracking-normal lg:text-4xl xl:text-5xl font-extralight text-6xl text-teal-100 text-2xl transition delay-300 ease-in-out hover:text-teal-300 cursor-pointer pt-2 text-center">
-          Greetings!, My name is <span className="text-6xl xl:text-5xl lg:text-2xl text-4xl font-[Branch]">
+        <h1 className="font-[Branch] tracking-normal lg:text-4xl xl:text-5xl font-extralight text-6xl text-teal-100 text-2xl transition delay-300 ease-in-out hover:text-teal-300 pt-2 text-center">
+        Greetings!, My name is
+        </h1>
+           <span className="text-6xl xl:text-5xl lg:text-2xl text-4xl font-[youngr]">
             Yahya 
             </span>
-        </h1>
-        <p className="text-center xl:text-xl pb-10 lg:text-md  text-lg px-3 xl:px-10 ">
+        <p className="text-center xl:text-xl pb-10 lg:text-md  text-lg px-3 xl:px-10 my-10 ">
           A tech whiz who moonlights as a 
-        <TextTransition className="text-center justify-center text-teal-100 xl:text-3xl lg:text-md py-5 font-bold italic font-[Branch] tracking tracking-widest " springConfig={presets.slow}>
+        <TextTransition className="text-center justify-center text-teal-100 xl:text-3xl lg:text-md py-2 font-bold font-sans tracking tracking-widest my-5 " springConfig={presets.slow}>
               {Texts[indexs % Texts.length]}
             </TextTransition>
         </p>
@@ -60,7 +61,7 @@ function Hero() {
     
       <div className="flex flex-cols w-auto bg-transparent lg:pt-10 justify-end">
         <img
-          className="ml-36 max-w-full md:min-h-full lg:h-auto xl:h-auto items-center xl:block rounded-full hidden border-2 border-gray-500 mx-5 backdrop-blur-sm xl:w-[500px] "
+          className="xl:ml-40 max-w-full md:min-h-full lg:h-auto xl:h-auto items-center xl:block rounded-full hidden  mx-5 backdrop-blur-0 mb-10 xl:w-[500px] "
           src={Art} alt="image"
           />
       </div>

@@ -9,7 +9,6 @@ import Footer from "./Components/footer";
 import { Parallax } from "react-parallax";
 import Blue from "./Assets/blue.gif";
 import Resume from "./Components/resume";
-
 import Leaf from "./Assets/leaf.gif";
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
 
         <About />
 
-        <Parallax bgImage={Leaf} strength={200} blur={5}>
+        <Parallax bgImage={Leaf} strength={900} className="mb-20 border-teal-100 border-8 shadow-inner shadow-black">
          <div className="backdrop-blur-lg">
           <Projects />
           <Skills />
