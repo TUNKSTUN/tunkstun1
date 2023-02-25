@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65f51ef3.css",
-    "main.js": "/static/js/main.3a55cbac.js",
+    "main.css": "/static/css/main.4768d542.css",
+    "main.js": "/static/js/main.113edb93.js",
     "static/js/787.a3bfe649.chunk.js": "/static/js/787.a3bfe649.chunk.js",
     "static/media/Water_1.mp4": "/static/media/Water_1.89f69a58e29c5a51e6ff.mp4",
     "static/media/Anim.gif": "/static/media/Anim.2afb47710163eb516086.gif",
@@ -16,7 +16,6 @@
     "static/media/Anim2.png": "/static/media/Anim2.60b9d27420c311a391c7.png",
     "static/media/0.jpg": "/static/media/0.6e5a2ae23a4c3b3a6033.jpg",
     "static/media/YoungRich.ttf": "/static/media/YoungRich.e55054ac121da020135a.ttf",
-    "static/media/Satisfy.ttf": "/static/media/Satisfy.26fe65e80d5457238bbb.ttf",
     "static/media/az-900.png": "/static/media/az-900.dd49b3c54249c87368c6.png",
     "static/media/room.png": "/static/media/room.3e358370b4e41ec71ff1.png",
     "static/media/CS.png": "/static/media/CS.e5f9cf47b22a8f417732.png",
@@ -28,12 +27,12 @@
     "static/media/ccna.png": "/static/media/ccna.17102a8218a337da901a.png",
     "static/media/CCNA.svg": "/static/media/CCNA.1d8568dddc6f0f96a8866ed4af81fa28.svg",
     "index.html": "/index.html",
-    "main.65f51ef3.css.map": "/static/css/main.65f51ef3.css.map",
-    "main.3a55cbac.js.map": "/static/js/main.3a55cbac.js.map",
+    "main.4768d542.css.map": "/static/css/main.4768d542.css.map",
+    "main.113edb93.js.map": "/static/js/main.113edb93.js.map",
     "787.a3bfe649.chunk.js.map": "/static/js/787.a3bfe649.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65f51ef3.css",
-    "static/js/main.3a55cbac.js"
+    "static/css/main.4768d542.css",
+    "static/js/main.113edb93.js"
   ]
 }
