@@ -5,7 +5,7 @@
 </p>
 
 *This is a portfolio website built using ReactJS, Firebase, Tailwind, and EmailJS.* 
-> Hosted on: https://www.tunkstun.web.app
+> Hosted on: https://tunkstun.web.app
 
 ## Technologies Used 
 
