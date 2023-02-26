@@ -45,3 +45,5 @@ firebase login
 firebase init hosting
 
 # Follow the prompts and configure your hosting settings
+```
+Give a ⭐ if you found this project interesting 🧡
