@@ -1,7 +1,7 @@
 # 💼 Portfolio Website!
 
 <p align="center">
-![Hero Page](https://github.com/TUNKSTUN/tunkstun1/blob/master/portfolio.png)
+  <img width="700" src="https://github.com/TUNKSTUN/tunkstun1/blob/master/portfolio.png" alt="Portfolio Demo">
 </p>
 
 *This is a portfolio website built using ReactJS, Firebase, Tailwind, and EmailJS.* 
