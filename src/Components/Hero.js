@@ -29,7 +29,7 @@ function Hero() {
         <source src="/Assets/Video/Waves.m4v" type="Video/mp4: codecs=hvc1"/>
         <source src="/Assets/Video/Waves.webm" type="Video/webm; codecs=vp9"/>
       </video> */}
-      <div className="flex-col xl:flex text-center xl:space-y-2 items-center lg:px-40 xl:px-10 md:px-10 px-10 space-y-2 lg:space-y-1 justify-center lg:pt-8   drop-shadow-xl backdrop-blur-lg shadow-lg shadow-black rounded-md md:min-w-auto md:h-full transition ease-in-out duration-500 hover:border-white p-10 h-full lg:[200px] flex ">
+      <div className="flex-col xl:flex text-center xl:space-y-2 items-center lg:px-40 xl:px-10 md:px-10 px-20 space-y-2 lg:space-y-1 justify-center lg:pt-8   drop-shadow-xl backdrop-blur-lg shadow-lg shadow-black rounded-md md:min-w-auto md:h-full transition ease-in-out duration-500 hover:border-white p-10 h-full lg:[200px] flex ">
       <img
           className=" flex lg:h-auto xl:h-auto justify-center items-center h-auto rounded-full xl:hidden min-w-auto   backdrop-blur-lg border-2-gray-500 md:w-[170px] md:flex w-[130px]" src={Art} alt="images"
         />
