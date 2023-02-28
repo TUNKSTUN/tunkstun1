@@ -21,7 +21,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className={`relative xl:flex lg:flex w-full  h-screen text-center text-6xl py-5 xl:py-1 lg:py-1 md:py-12 xl:pt-5 text-white px-10 items-center justify-around  font-mono mb-10 `}
+      className={`relative xl:flex lg:flex w-full  h-screen text-center text-6xl py-10 xl:py-1 lg:py-1 md:py-12 xl:pt-5 text-white px-10 items-center justify-around  font-mono mb-10 `}
     ><video className="absolute top-0 left-0 w-screen h-screen object-cover" autoPlay loop muted>
     <source src={Video} type="video/mp4" />
   </video>
