@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Art from "../Assets/Anim.gif";
 import TextTransition, { presets } from "react-text-transition";
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
@@ -6,13 +6,15 @@ import Video from "../Assets/Video/Water_1.mp4"
 
 const Texts = ["Cloud Practioner", "Netops learner", "Part-time Dev"];
 function Hero() {
-  const [indexs, setIndexs] = React.useState(0);
+  const [indexs, setIndexs] = useState(0);
 
-  React.useEffect(() => {
+
+  useEffect(() => {
     const intervalIds = setInterval(
       () => setIndexs((index) => index + 1),
       3000
     );
+    
     return () => clearTimeout(intervalIds);
   }, []);
 
@@ -29,8 +31,7 @@ function Hero() {
       </video> */}
       <div className=" flex-col xl:flex text-center xl:space-y-2 items-center lg:px-40 xl:px-10 space-y-2 lg:space-y-1 justify-center lg:pt-8  drop-shadow-xl backdrop-blur-lg shadow-lg shadow-black rounded-md transition ease-in-out duration-500 hover:border-white p-10 px-20 lg:[300px]">
       <img
-          className=" flex  min-h-full md:min-w-[400px] lg:h-auto xl:h-auto justify-center items-center h-auto rounded-full xl:hidden min-w-md md:flex md:m-auto backdrop-blur-lg border-2-gray-500 md:[200px] w-[400px]"
-          src={Art} alt="image"
+          className=" flex min-h-full md:min-w-[400px] lg:h-auto xl:h-auto justify-center items-center h-auto rounded-full xl:hidden min-w-md md:flex md:m-auto backdrop-blur-lg border-2-gray-500 md:[200px] w-[400px]" src={Art} alt="images"
         />
         <h1 className="font-[Branch] tracking-normal lg:text-4xl xl:text-5xl font-extralight text-6xl text-teal-100 text-2xl transition delay-300 ease-in-out hover:text-teal-300 pt-2 text-center">
         Greetings!, My name is
