@@ -1,11 +1,11 @@
 # 💼 Portfolio Website!
 
 <p align="center">
-![Alt Text](portfolio.png)
+  <img width="700" src="https://github.com/TUNKSTUN/tunkstun1/blob/master/portfolio.png" alt="Portfolio Demo">
 </p>
 
 *This is a portfolio website built using ReactJS, Firebase, Tailwind, and EmailJS.* 
-> Hosted on: https://www.tunkstun.web.app
+> Hosted on: https://tunkstun.web.app
 
 ## Technologies Used 
 
@@ -45,3 +45,5 @@ firebase login
 firebase init hosting
 
 # Follow the prompts and configure your hosting settings
+```
+Give a ⭐ if you found this project interesting 🧡
