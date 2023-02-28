@@ -10,18 +10,14 @@ import { Parallax } from "react-parallax";
 import Blue from "./Assets/blue.gif";
 import Resume from "./Components/resume";
 import Leaf from "./Assets/leaf.gif";
+import Loader from "./Components/loader";
 
 function App() {
   return (
     <>
+    <Loader/>
       <Navbar />
       <div className="bg-stone-900 text-stone-900 w-full xl:px-10 lg:px-10 p-2">
-        <Parallax
-          bgImage={Blue}
-          strength={200}
-          className="border-none mt-10 w-full h-full"
-        >
-        </Parallax>
           <Hero />
 
         <About />

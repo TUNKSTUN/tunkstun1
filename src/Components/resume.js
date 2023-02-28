@@ -1,17 +1,12 @@
 import React from "react";
 import CCNA from "../Assets/ccna.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import lvl1 from "../Assets/lvl1.png";
-import lvl2 from "../Assets/lvl2.png";
-import lvl3 from "../Assets/lvl3.png";
 import Anim2 from "../Assets/Anim2.png";
 import AZ from "../Assets/az-900.png";
 import { useState } from "react";
 import {FaFilePdf } from "react-icons/fa";
 import Room  from "../Assets/room.png"
 import "./resume.css"
-
-import { Parallax, ParallaxBackground } from "react-parallax";
 
 function Resume() {
   const [isOpen, setIsOpen] = useState(false);
