@@ -12,7 +12,7 @@ function About() {
       <br />
       <div className="w-auto h-full text-center justify-center items-center">
         <div className=" text-center text-5xl text-teal-100 md:p-40">
-          <h1 className="font-[Branch] tracking-widest">About</h1>
+          <h1 className="font-[Courgette] tracking-widest">About</h1>
           <div className="w-auto bg-stone-800 tracking-normal text-justify m-2 xl:p-3 lg:p-3 p-2 text-sm xl:text-xl lg:text-base md:text-lg text-stone-100 xl:px-10 xl:mx-60 border-[1px] border-teal-400 rounded-md transition ease-in-out duration-300 hover:shadow-xl hover:shadow-teal-900 hover:scale-105">
             <p>
               Welcome to my portfolio website! I am excited to share my work and
