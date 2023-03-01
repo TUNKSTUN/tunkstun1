@@ -58,7 +58,7 @@ function Resume() {
                 <h1 className="xl:text-xl text-start text-base p-2 font-bold">
                   ABOUT:
                   <img
-                    src={Anim2} alt="image"
+                    src={Anim2} alt="image2"
                     className="xl:w-[100px] xl:h-[100px] w-16 h-16 m-1 float-left border-2 border-stone-800"
                     />
                   <p className="xl:text-ms lg:text-ms text-xs text-justify text-stone-900 tracking-tighter leading-tight">
