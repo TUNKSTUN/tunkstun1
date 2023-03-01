@@ -26,7 +26,7 @@ function Resume() {
             OR
          </p>
       <button type="button" alt="resume" className="1 px-10 bg-stone-900 font-mono 60 h-auto p-2 text-white border-2 border-teal-200 transition ease-out delay-100 hover:border-b-teal-600 hover:bg-teal-100 hover:text-stone-900 ">
-        <a href="https://drive.google.com/file/d/1RtdII7A1c9tkCfYErURWV-FjByCkzk0J/view?usp=sharing" className="gap-2 text-lg flex italic">Download <FaFilePdf className="text-xl"/> </a>
+        <a href="https://drive.google.com/file/d/1M6OUS7HeTXwo655S8mOJ54S3QgCOV7Pr/view?usp=share_link" className="gap-2 text-lg flex italic">Download <FaFilePdf className="text-xl"/> </a>
       </button>
         </div>
         
