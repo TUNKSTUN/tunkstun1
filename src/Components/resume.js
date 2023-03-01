@@ -8,6 +8,7 @@ import {FaFilePdf } from "react-icons/fa";
 import Room  from "../Assets/room.png"
 import "./resume.css"
 
+
 function Resume() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -16,13 +17,13 @@ function Resume() {
         
 
       <h1
-        className="disable-text-selection xl:text-10xl text-5xl justify-start items-center text-centerflex font-bold tracking-widest font-[Branch] text-teal-200 text-start transition ease-out xl:hover:scale-110 hover:scale-125 hover:text-teal-300 hover:cursor-pointer delay-100 hover:-rotate-3"
+        className="disable-text-selection xl:text-10xl text-5xl justify-start items-center text-centerflex font-bold tracking-widest font-[Courgette] text-teal-200 text-start transition ease-out xl:hover:scale-110 hover:scale-125 hover:text-teal-300 hover:cursor-pointer delay-100 hover:-rotate-3"
         onClick={() => setIsOpen(!isOpen)}
         >
         Resume
         <h1 className="blink bg-stone-900 text-sm w-auto h-10  text-center font-mono">CLICK TO DISPLAY👆</h1>
       </h1>
-        <p className="  text-5xl text-teal-200 font-[branch]">
+        <p className="  text-5xl text-teal-200 font-[Courgette]">
             OR
          </p>
       <button type="button" alt="resume" className="1 px-10 bg-stone-900 font-mono 60 h-auto p-2 text-white border-2 border-teal-200 transition ease-out delay-100 hover:border-b-teal-600 hover:bg-teal-100 hover:text-stone-900 ">

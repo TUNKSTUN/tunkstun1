@@ -28,7 +28,7 @@ function Navbar() {
       >
         
         
-        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-teal-200 sticky top-0 z-50 font-[Branch] transition ease-in-out hover:bg-teal-200 hover:text-stone-900 hover:text-2xl duration-100 border-b hover:border-b-teal-100">
+        <div id="home" className="  bg-stone-900 backdrop-blur-sm md:w-full lg:w-full h-12 text-teal-200 sticky top-0 z-50 font-[Courgette] transition ease-in-out hover:bg-teal-200 hover:text-stone-900 hover:text-2xl duration-100 border-b hover:border-b-teal-100">
           <div className="justify-center xl:justify-between xl:shrink-0 flex xl:px-10 px-20">
             <div className="space-x-5 mt-2 pl-3 text-2xl transition ease-in-out hover:cursor-pointer duration-400 hidden xl:block font-[youngr]">
             <Link

@@ -53,7 +53,7 @@ function Skills() {
       id="skills"
       className="flex flex-col px-5 space-y-2 h-auto xl:w-full  bg-transparent p-12 backdrop-blur-lg"
     >
-      <h1 className="xl:text-10xl text-4xl text-teal-100  text-center font-[Branch]">
+      <h1 className="xl:text-10xl text-4xl text-teal-100  text-center font-[Courgette]">
         👨‍💻Skills
       </h1>
       <div className="xl:grid grid-cols-2 xl:gap-2 flex flex-col space-y-2 xl:space-y-0 xl:mb-10 ">

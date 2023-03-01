@@ -3,7 +3,7 @@ import CCNA from "../Assets/CCNA.svg";
 import Az from "../Assets/az900.png";
 import NB from "../Assets/NB.png";
 import CS from "../Assets/CS.png";
-import { SiAnaconda, SiAndroid, SiAndroidstudio, SiFirebase, SiGoogle, SiGooglemaps, SiMicrosoftazure, SiMysql, SiPycharm, SiPython, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
+import { SiAnaconda, SiAndroid, SiAndroidstudio, SiFirebase, SiGooglemaps, SiMicrosoftazure, SiMysql, SiPycharm, SiPython, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
 
 function Projects() {
   return (
@@ -14,7 +14,7 @@ function Projects() {
       className="w-full h-full md:shrink-0 bg-transparent font-mono xl:flex lg:flex md:flex flex-row text-teal-300 py-10 backdrop-blur-lg  transition ease-in-out duration-300  my-10"
       >
       <div className="xl:space-y-5 lg:space-y-5 space-y-2  justify-center items-center p-3 bg-stone-900 xl:w-1/2 lg:w-1/2 md:w-1/2 w-auto border-teal-400 border-2 duration-300 opacity-80 hover:border-white rounded-lg">
-        <h1 className=" tracking-normal lg:tracking-wide  lg:text-5xl xl:text-10xl text-4xl text-teal-200 font-[Branch] xl:tracking-wide">
+        <h1 className=" tracking-normal lg:tracking-wide  lg:text-5xl xl:text-10xl text-4xl text-teal-200 font-[Courgette] xl:tracking-wide">
           Projects  📝
         </h1>
 
@@ -30,7 +30,7 @@ function Projects() {
           </p>
         </div>
         <div className="text-teal-400 p-2 rounded-sm border-2 border-teal-200">
-        <h1 className=" text-4xl font-[Branch] text-white tracking-wide">Badges📛</h1>
+        <h1 className=" text-4xl font-[Courgette] text-white tracking-wide">Badges🏅</h1>
         <div className="md:grid md:grid-cols-2 gap-1 md:justify-around w-auto badges  xl:w-auto min-h-max border-stone-500 shadow-inner shadow-black bg-white border-2 border-spacing-2 text-black justify-center p-2 flex flex-row space-x-2">
           <a href="https://www.credly.com/badges/73af2e55-2f1b-4871-8625-010db37101be/public_url">
             <img
@@ -74,7 +74,7 @@ function Projects() {
             <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
               <h3 class="text-center mt-[145px]">
                 <a class="text-white xl:text-4xl text-2xl text-center transition ease-in-out delay-100 " href="https://github.com/TUNKSTUN/BloodBank-master">
-                  <span class="absolute inset-0 text-ms xl:text-xl"></span>
+                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest flex"></span>
                   RAKHT-SPOT
                 </a>
               </h3>
@@ -108,7 +108,7 @@ function Projects() {
             <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
               <h3 class="text-center items-center  mt-[170px]">
                 <a class="text-white xl:text-4xl text-2xl text-center" href="https://github.com/TUNKSTUN/Voice_Assistant">
-                  <span class="absolute inset-0 text-ms xl:text-xl"></span>
+                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
                   ALISA
                 </a>
               </h3>
@@ -140,7 +140,7 @@ function Projects() {
             <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
               <h3 class="text-center items-center mt-36">
                 <a class="text-white xl:text-4xl text-2xl  text-center" href="https://github.com/TUNKSTUN/tunkstun1">
-                  <span class="absolute inset-0 text-ms xl:text-xl"></span>
+                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
                   TUNKSTUN
                 </a>
               </h3>
@@ -174,7 +174,7 @@ function Projects() {
                   class="text-white xl:text-4xl text-2xl text-center"
                   href="https://github.com/TUNKSTUN/Ethihax"
                   >
-                  <span class="absolute inset-0 text-ms xl:text-xl"></span>
+                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
                   ETHIHAX
                 </a>
               </h3>

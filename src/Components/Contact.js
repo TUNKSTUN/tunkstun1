@@ -30,11 +30,11 @@ const Contact = () => {
         <div className='bg-transparent xl:flex rounded-xl justify-between w-full h-full p-5 space-y-2 lg:px-40'>
         
         <div className='flex lg:flex bg-transparent xl:w-1/2  lg:w-full lg:my-5 h-auto  justify-center backdrop-blur-lg rounded-md items-center '>
-          <img src={Fan} className='h-full flex rounded-full xl:max-w-xl xl:flex lg:block xl:w-[500px] w-[300px] p-2 md:min-h-full lg:h-auto xl:h-auto shadow-2xl shadow-gray-900 lg:mt-10'/>
+          <img src={Fan} alt="computer dizzy" className='h-full flex rounded-full xl:max-w-xl xl:flex lg:block xl:w-[500px] w-[300px] p-2 md:min-h-full lg:h-auto xl:h-auto shadow-2xl shadow-gray-900 lg:mt-10'/>
         </div>
         <div className=' border-2 flex xl:w-1/2 lg:w-full lg:flex  bg-teal-900 flex-col backdrop-blur-xl border-teal-900 rounded-xl justify-center p-2 text-sm text-mono xl:text-xl text-white tracking-wider text-start xl:space-y-5 '>
           <form ref={form} onSubmit={sendEmail} className='p-5 rounded-xl bg-teal-100 flex flex-col space-y-2 xl:p-28 px-5 md:px-24 lg:px-8 text-teal-900 ' >
-          <h1 className='text-center justify-center md:text-5xl text-3xl xl:text-5xl font-[youngr] font-bold lg:text-2xl text-teal-900 flex mt-3'>Contact</h1>
+          <h1 className='text-center justify-center md:text-5xl text-3xl xl:text-5xl font-[Courgette] font-bold lg:text-2xl text-teal-900 flex mt-3'>Contact</h1>
             <label>Name</label>
             <input type='name' name="user_name" className='p-2 font-mono w-auto h-auto border-none rounded-md bg-teal-900 text-white' />
             <label>Email</label>

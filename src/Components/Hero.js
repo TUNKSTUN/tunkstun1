@@ -41,7 +41,7 @@ function Hero() {
             </span>
         <p className="text-center xl:text-xl pb-10 lg:text-md  text-lg px-3 xl:px-10 my-10 ">
           A tech whiz who moonlights as a 
-        <TextTransition className="text-center justify-center text-teal-100 xl:text-3xl lg:text-md py-2 font-bold font-sans tracking tracking-widest my-5 " springConfig={presets.wobbly}>
+        <TextTransition className="text-center justify-center text-teal-100 xl:text-3xl lg:text-md py-2 font-bold font-[Courgette] tracking tracking-widest my-5 " springConfig={presets.wobbly}>
               {Texts[indexs % Texts.length]}
             </TextTransition>
         </p>
