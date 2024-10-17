@@ -251,8 +251,8 @@ function Projects() {
         </div>
       </div>
 
-        <div className="w-full flex flex-col items-center p-5">
-  <h1 className="text-amber-200 font-[Courgette] text-4xl text-start">~Articles~</h1>
+        <div className="w-full flex flex-col items-center p-5 bg-amber-400">
+  <h1 className="text-stone-900 font-[Courgette] text-4xl text-start">~Articles~</h1>
 
   {/* Articles Grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-5 w-full">

@@ -30,7 +30,7 @@ function Hero() {
       </video>
 
       {/* Main Content: Text Section */}
-      <div className="z-1 flex flex-col items-center justify-center xl:items-start space-y-6 text-center xl:text-left p-4 px-10 xl:p-20 bg-transparent backdrop-blur-xl rounded-lg shadow-md">
+      <div className="z-1 flex flex-col items-center justify-center xl:absolute left-12 top-20 xl:items-start space-y-6 text-center xl:text-left p-4 px-10 xl:p-20 bg-transparent backdrop-blur-xl rounded-lg shadow-md">
         <h1 className="text-2xl xl:text-5xl lg:text-4xl font-extralight text-amber-200">
           Greetings! My name is
         </h1>
@@ -62,9 +62,9 @@ function Hero() {
       </div>
 
       {/* Image Section */}
-      <div className="z-10 my-12 xl:mb-10 xl:ml-16">
+      <div className="z-10 my-12 xl:mb-10 xl:ml-16 right-[8%] top-[10%] xl:absolute">
         <img
-          className="w-52 h-52 lg:w-64 lg:h-64 xl:w-80 xl:h-80 rounded-full border-4 border-amber-300 bg-amber-300  shadow-lg"
+          className="w-52 h-52 lg:w-64 lg:h-64 xl:w-[500px] xl:h-auto rounded-full border-4 border-amber-300 bg-amber-300  shadow-lg"
           src={Art}
           alt="Animated Yahya Logo"
         />
