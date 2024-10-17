@@ -251,15 +251,15 @@ function Projects() {
         </div>
       </div>
 
-        <div className="w-full flex flex-col items-center p-5 bg-amber-400">
+        <div className="w-full flex flex-col items-center p-5 bg-amber-400 rounded ">
   <h1 className="text-stone-900 font-[Courgette] text-4xl text-start">~Articles~</h1>
 
   {/* Articles Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-5 w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-5 w-full bg-stone-900 p-5 rounded ">
     {articles.slice(0, 6).map((article, index) => (
       <div
         key={index}
-        className="relative bg-stone-800 border-amber-200 border-4 rounded-md overflow-hidden transition ease-in-out duration-300 hover:border-amber-500 hover:shadow-lg hover:brightness-110"
+        className="relative bg-stone-800  shadow-md shadow-amber-200 rounded-md overflow-hidden transition ease-in-out duration-300 hover:shadow-lg hover:brightness-110"
       >
         {/* Background Image */}
         <img
