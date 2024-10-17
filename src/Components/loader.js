@@ -23,8 +23,8 @@ const Loader = () => {
   }, []);
 
   return (
-    <div className={`font-mono p-10  text-center text-xl text-teal-300 bg-black flex  w-full h-full z-20 fixed top-0 left-0 pr-16 xl:pr-28 lg:pr-20 justify-center items-center ${loading ? "block" : " transition ease-in-out duration-700 -translate-y-full "}`}>
-      <InfinitySpin color="	#AFEEEE" height={120} width={120} className=""/>
+    <div className={`font-mono p-10  text-center text-xl text-amber-300 bg-black flex  w-full h-full z-50 fixed top-0 left-0 justify-center items-center ${loading ? "block" : " transition ease-in-out duration-700 -translate-y-full fade-in-out"}`}>
+      <InfinitySpin color="	#fbbf24" height={200} width={200} className=""/>
     </div>
   );
 };

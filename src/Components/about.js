@@ -1,34 +1,52 @@
 import React from "react";
-
+import ParticleRing from "./ParticleRing";
 
 function About() {
   return (
-   
     <div
-    id="about"
-    className="relative w-full h-full font-mono pt-32 pb-80 border-t-2 border-teal-100 mt-10 bg-transparent justify-center items-center"
+      id="about"
+      className="relative w-full min-h-screen font-mono border-t-2 flex xl:flex-row flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(${require("../Assets/background_about.png")})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backdropFilter: "blur(50px)",
+      }}
     >
+      {/* Left - Window Style for 3D Atom Animation */}
+      <div className="w-full justify-center items-center">
+        <div className="window-frame bg-amber-800 rounded-xl shadow-lg flex justify-center items-center w-full h-full">
+          <ParticleRing />
+        </div>
+      </div>
 
-      <br />
-      <div className="w-auto h-full text-center justify-center items-center">
-        <div className=" text-center text-5xl text-teal-100 md:p-40">
-          <h1 className="font-[Courgette] tracking-widest">About</h1>
-          <div className="w-auto bg-stone-800 tracking-normal text-justify m-2 xl:p-3 lg:p-3 p-2 text-sm xl:text-xl lg:text-base md:text-lg text-stone-100 xl:px-10 xl:mx-60 border-[1px] border-teal-400 rounded-md transition ease-in-out duration-300 hover:shadow-xl hover:shadow-teal-900 hover:scale-105">
-            <p>
-              Welcome to my portfolio website! I am excited to share my work and
-              professional background with you. As an aspiring Software Engineer
-              with a strong passion for emerging technologies, I am constantly
-              looking for new challenges to enhance my skills and knowledge.
-              Here, you will find a showcase of my previous projects and
-              accomplishments, as well as a glimpse into my professional
-              journey. Thank you for taking the time to visit my portfolio, and
-              I hope you enjoy browsing through my work ❤️❤️❤️❤️.
+      {/* Right - About Me Content */}
+      <div className="w-auto flex flex-col  absolute xl:left-[56%] xl:top-2 p-5 text-left items-center">
+        <div className="table-top rounded-lg p-4 relative  w-full max-w-x ">
+          <div className="bulletin-board p-6 rounded-lg top-50 backdrop-blur-2xl text-base text-justify text-amber-200 transform hover:scale-101">
+            <h1 className="font-extrabold text-4xl font-[Courgette]">
+              ABOUT
+            </h1>
+            <p className="text-base font-[Courier] md:text-lg tracking-normal leading-relaxed mb-4">
+              I am a <strong>Network Engineer</strong> and{" "}
+              <strong>Software Developer</strong> with expertise in{" "}
+              <strong>Java</strong>, <strong>C#</strong>, and{" "}
+              <strong>Python</strong>. With a strong background in{" "}
+              <strong>SD-WAN</strong> and <strong>Cisco</strong> technologies, I
+              focus on optimizing network performance and am currently exploring{" "}
+              <strong>Azure</strong> and <strong>AWS</strong> cloud solutions.
+            </p>
+            <p className="text-base md:text-lg tracking-normal leading-relaxed">
+              In my free time, I enjoy hiking, experimenting with new recipes,
+              and constantly expanding my skills to stay ahead in the tech
+              world.
             </p>
           </div>
         </div>
       </div>
     </div>
-      
   );
 }
 

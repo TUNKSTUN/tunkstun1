@@ -31,6 +31,34 @@ module.exports = {
         // Complex site-specific column configuration
         'footer': '200px minmax(900px, 1fr) 100px',
       },
+      fontFamily: {
+        arial: ['Arial', 'sans-serif'],
+
+      },
+      keyframes: {
+        spin3d: {
+          '0%': { transform: 'rotateX(0deg) rotateY(0deg)' },
+          '100%': { transform: 'rotateX(360deg) rotateY(360deg)' },
+        },
+        orbitX: {
+          '0%': { transform: 'rotate(0deg) translateX(100px) translateZ(0) rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg) translateX(100px) translateZ(0) rotate(-360deg)' },
+        },
+        orbitY: {
+          '0%': { transform: 'rotate(0deg) translateY(100px) translateZ(0) rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg) translateY(100px) translateZ(0) rotate(-360deg)' },
+        },
+        orbitZ: {
+          '0%': { transform: 'rotate(0deg) translateZ(50px) rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg) translateZ(50px) rotate(-360deg)' },
+        },
+      },
+      animation: {
+        'spin-3d': 'spin3d 8s linear infinite',
+        'orbit-x': 'orbitX 4s ease-in-out infinite',
+        'orbit-y': 'orbitY 6s ease-in-out infinite',
+        'orbit-z': 'orbitZ 5s ease-in-out infinite',
+      },
       crollbarWidth: {
         thin: '6px',
       },

@@ -1,207 +1,300 @@
-import React, {useState} from "react";
-import CCNA from "../Assets/CCNA.svg";
+import React, { useState, useEffect } from "react";
+import CCNP from "../Assets/ccnp.png";
+import CCNA from "../Assets/ccna.png";
 import Az from "../Assets/az900.png";
-import NB from "../Assets/NB.png";
-import CS from "../Assets/CS.png";
-import { SiAnaconda, SiAndroid, SiAndroidstudio, SiFirebase, SiGooglemaps, SiMicrosoftazure, SiMysql, SiPycharm, SiPython, SiReact, SiSpringboot, SiTailwindcss } from "react-icons/si";
+import AZ305 from "../Assets/az305.svg";
+import CS from "../Assets/saac03.png";
+import {
+  SiDotnet,
+  SiAndroid,
+  SiAndroidstudio,
+  SiFirebase,
+  SiGooglemaps,
+  SiMicrosoftazure,
+  SiReact,
+  SiTailwindcss,
+  SiGithub,
+} from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
 
 function Projects() {
+  const projects = [
+    {
+      title: "RAKHT-SPOT",
+      description:
+        "Android Application Created for Blood Donors and Recipients, no Intermediaries.",
+      techStack: [
+        <SiAndroidstudio />,
+        <SiFirebase />,
+        <SiAndroid />,
+        <SiGooglemaps />,
+      ],
+      image: require("../Assets/ARTS/0.jpg"),
+      link: "https://github.com/TUNKSTUN/BloodBank-master",
+    },
+    {
+      title: "W2EDAX",
+      description:
+        "A blog website using Angular, C# ASP.NET, and Azure Cloud, focused on Worldwide Ethical Defense and Attack Exchange.",
+      techStack: [
+        <FaAngular />,
+        <SiDotnet />,
+        <SiMicrosoftazure />,
+        <SiGithub />,
+        <SiFirebase />,
+      ],
+      image: require("../Assets/ARTS/w2edax.jpg"),
+      link: "https://w2edax.web.app",
+    },
+    {
+      title: "TUNKSTUN",
+      description:
+        "A Portfolio website, built using ReactJS, Firebase, and TailwindCSS.",
+      techStack: [<SiReact />, <SiFirebase />, <SiTailwindcss />],
+      image: require("../Assets/ARTS/NATURE.jpg"),
+      link: "https://github.com/tunkstun/tunkstun1",
+    },
+  ];
+
+  const badges = [
+    {
+      title: "Cisco Certified Network Associate",
+      image: CCNA,
+      link: "https://www.your-certification-link.com",
+    },
+    {
+      title: "Azure Fundamentals (AZ-900)",
+      image: Az,
+      link: "https://www.your-certification-link.com",
+    },
+    {
+      title: "CCNP",
+      image: CCNP,
+      link: "https://www.your-certification-link.com",
+    },
+    {
+      title: "Azure Solutions Architect Expert (AZ-305)",
+      image: AZ305,
+      link: "https://www.your-certification-link.com",
+    },
+    {
+      title: "SAAC3 Certification",
+      image: CS,
+      link: "https://www.your-certification-link.com",
+    },
+  ];
+  const articles = [
+    {
+      title: "Ethical Hacking: Strengthening Cybersecurity Through Authorized Exploitation",
+      description:
+        "An exploration of ethical hacking and its importance in modern cybersecurity",
+      image: require("https://firebasestorage.googleapis.com/v0/b/w-edax-b.appspot.com/o/MediaFileUrls%2FArticles%2Fe993e355-19c7-4d6c-885a-bff2c320b2c6%2FAssets%2FEthical%20Hacking.jpg?alt=media&token=f0fee764-481f-4828-9ffe-c63721cdbc03"),
+      link: "https://w2edax.web.app/article/e993e355-19c7-4d6c-885a-bff2c320b2c6",
+    },
+    {
+      title: "The Power of Network Segmentation in Cybersecurity",
+      description:
+        "Exploring the importance of network segmentation in modern cybersecurity",
+    
+      image: require("https://firebasestorage.googleapis.com/v0/b/w-edax-b.appspot.com/o/MediaFileUrls%2FArticles%2F1c73a654-2f47-4912-a234-fc7812c715b8%2FAssets%2FThe%20power%20of%20network%20segmentation.jpg?alt=media&token=b2cf2bb3-538a-41e9-a082-a50e9d736f59"),
+      link: "https://w2edax.web.app/article/1c73a654-2f47-4912-a234-fc7812c715b8",
+    },
+    {
+      title: "GuestBook",
+      description:
+        "Drop a message on our guestbook",
+      image: require("../Assets/w2edax.jpg"),
+      link: "https://w2edax.web.app/Guestbook",
+    },
+  ];
+  const [currentProject, setCurrentProject] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, [projects.length]);
+
   return (
-    <div className="p-5">
-      
     <div
       id="projects"
-      className="w-full h-full md:shrink-0 bg-transparent font-mono xl:flex lg:flex md:flex flex-row text-teal-300 py-10 backdrop-blur-lg  transition ease-in-out duration-300  my-10"
-      >
-      <div className="xl:space-y-5 lg:space-y-5 space-y-2  justify-center items-center p-3 bg-stone-900 xl:w-1/2 lg:w-1/2 md:w-1/2 w-auto border-teal-400 border-2 duration-300 opacity-80 hover:border-white rounded-lg">
-        <h1 className=" tracking-normal lg:tracking-wide  lg:text-5xl xl:text-10xl text-4xl text-teal-200 font-[Courgette] xl:tracking-wide">
-          Projects  📝
+      className="flex flex-col xl:flex-row p-5 justify-center items-center pb-10"
+    >
+      <div className="w-auto xl:w-2/5 pr-5  justify-center items-center text">
+        <h1 className="text-5xl text-amber-200 font-[Courgette] mb-5">
+          Projects 📝
         </h1>
+        <p className="text-md text-justify text-white mb-5 font-[courier]">
+          I have undertaken a diverse range of projects to expand my knowledge
+          and skills in various technologies. These projects span across
+          different domains such as web development, cloud infrastructure, and
+          network security. From building dynamic web applications using Angular
+          and ASP.NET to deploying cloud-based solutions with Azure and AWS,
+          each project has pushed me to dive deeper into cutting-edge
+          technologies.
+        </p>
+        <p className="text-md text-justify text-white mb-5 font-[courier]">
+          Some of my notable projects include developing a scalable guestbook
+          application with real-time messaging using Gun.js and Firebase,
+          creating Dockerized applications served with NGINX, and designing
+          secured networking setups utilizing Sophos XG firewalls and VPN
+          configurations. These experiences have equipped me with a solid
+          foundation in both development and system administration, with a focus
+          on performance optimization and security.
+        </p>
+        <p className="text-md text-justify text-white mb- font-[courier]">
+          Whether it's implementing REST APIs, integrating CI/CD pipelines, or
+          troubleshooting complex network environments, I continuously seek
+          opportunities to apply and enhance my skills.
+        </p>
 
-        <div className="tracking-tight text-sm md:text-base xl:text-base text-justify w-auto p-3 bg-stone-800 text-white border-[1px] border-teal-400 transition ease-in-out duration-1000 hover:border-white hover:shadow-xl hover:shadow-teal-900 hover:scale-105">
-          <p>
-            I have undertaken a diverse range of projects to expand my knowledge
-            and skills in various technologies. This includes both college and
-            personal projects, encompassing areas such as Natural Language
-            Processing, Android app development, desktop app development, and
-            website creation. Through these projects, I have aimed to gain a
-            comprehensive understanding of the different technologies and
-            develop my expertise in these fields.
-          </p>
-        </div>
-        <div className="text-teal-400 p-2 rounded-sm border-2 border-teal-200">
-        <h1 className=" text-4xl font-[Courgette] text-white tracking-wide">Badges🏅</h1>
-        <div className="md:grid md:grid-cols-2 gap-1 md:justify-around w-auto badges  xl:w-auto min-h-max border-stone-500 shadow-inner shadow-black bg-white border-2 border-spacing-2 text-black justify-center p-2 flex flex-row space-x-2">
-          <a href="https://www.credly.com/badges/73af2e55-2f1b-4871-8625-010db37101be/public_url">
-            <img
-              className="xl:w-max xl:h-max lg:w-max w-auto h-auto mt-2 transition ease-in-out hover:scale-110"
-              src={CCNA}
-              alt=""
-              />
-          </a>
-          <a href="https://www.credly.com/badges/e4c9d7c3-b137-40a7-99e3-870c1b313df9/public_url">
-            <img
-              className="xl:w-20 lg:w-min w-auto h-auto transition ease-in-out hover:scale-110"
-              src={Az}
-              alt=""
-              />
-          </a>
-          <a href="https://www.credly.com/badges/af12a7ce-ca2b-4e13-80cb-752a5d9ac274/public_url">
-            <img
-              className="xl:w-20 lg:w-12 w-auto h-auto transition ease-in-out hover:scale-110"
-              src={NB}
-              alt=""
-              />
-          </a>
-          <a href="https://www.credly.com/badges/561f246e-d546-47a4-9944-875e277e9ce9/public_url">
-            <img
-              className="xl:w-20 lg:w-12 w-auto h-auto transition ease-in-out hover:scale-110"
-              src={CS}
-              alt=""
-              />
-          </a>
-        </div>
+        <h1 className="text-3xl font-[Courgette] mt-10 text-amber-200">
+          Badges
+        </h1>
+        <p className="text-white mt-4 font-[courier]">
+          Here are some of the certifications I have earned, showcasing my
+          expertise and dedication in different technologies and domains. Each
+          badge represents a milestone in my professional journey.
+        </p>
+        <div className="flex flex-row gap-4 mt-10 xl:justify-start justify-center">
+          {badges.map((badge, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col items-center justify-center w-16 h-16 bg-white border-amber-300 border-2 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            >
+              <a
+                href={badge.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full h-full relative"
+              >
+                <img
+                  src={badge.image}
+                  alt={badge.title}
+                  className="w-full h-full object-cover rounded-md"
+                />
+                {/* Overlay effect */}
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity duration-300 rounded-md"></div>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="xl:grid lg:grid grid-cols-2 md:grid md:grid-cols-2 sm:grid xl:gap-5 lg:gap-5 md:gap-2 gap-3 xl:w-full lg:w-full bg-transparent p-2 md:w-full h-auto text-lg items-center text-center  text-white font-mono">
-        <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl mt-1 transition duration-300 ease-in-out hover:hover:blur-1 border-2 border-teal-600">
-          <img
-            src={require("../Assets/ARTS/0.jpg")}
-            alt="blog article"
-            class="object-cover w-full h-full"
-            />
-          <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-90 transition duration-300 ease-in-out">
-            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
-              <h3 class="text-center mt-[145px]">
-                <a class="text-white xl:text-4xl text-2xl text-center transition ease-in-out delay-100 " href="https://github.com/TUNKSTUN/BloodBank-master">
-                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest flex"></span>
-                  RAKHT-SPOT
-                </a>
-              </h3>
-
-              <div className="hidden xl:block rounded-md bg-gray-700 translate-y-24 pb-2 w-[350px] items-center h-[450px] object-bottom transition ease-in-out delay-300 hover:-translate-y-16 hover:cursor-pointer  hover:bg-stone-900 hover:text-white p-2">
-                <div className="text-teal-400 font-bold tracking-widest text-base hover:text-inherit">HOVER ME👆</div>
-                <div className="text-white text-center grid flex-col space-y-2">
-                  <p className="flex-col text-sm mt-2">
-                    Android Application Created for Blood Donors and Recipient,
-                    no Intermediaries
-                  </p>
-                  <p className="text-ms">Tech-Stack</p>
-                  <span className="flex flex-wrap w-auto h-auto space-x-2 bg-teal-900 rounded-lg text-4xl justify-between p-6">
-                    <SiAndroidstudio className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiFirebase className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiAndroid className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiGooglemaps className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class=" relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl mt-1 transition duration-300 ease-in-out border-2 border-teal-500 hover:blur-0">
-          <img
-            src={require("../Assets/ARTS/ALISA.jpg")}
-            alt="blog article"
-            class="object-cover w-full h-full"
-            />
-          <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-90 transition duration-300 ease-in-out">
-            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
-              <h3 class="text-center items-center  mt-[170px]">
-                <a class="text-white xl:text-4xl text-2xl text-center" href="https://github.com/TUNKSTUN/Voice_Assistant">
-                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
-                  ALISA
-                </a>
-              </h3>
-              <div className="hidden xl:block rounded-md bg-gray-700  translate-y-24 pb-2 w-[350px] items-center h-[450px] object-bottom transition ease-in-out delay-300 hover:-translate-y-16 hover:cursor-pointer  hover:bg-stone-900 hover:text-white p-2">
-                <div className="text-teal-400 font-bold tracking-widest text-base hover:text-inherit">HOVER ME👆</div>
-                <div className="text-white text-center grid flex-col space-y-2">
-                  <p className="flex-col text-sm mt-2">
-                    AI Voice Assistant created for Uni Students, a Desktop Application
-                  </p>
-                  <p className="text-ms">Tech-Stack</p>
-                  <span className="flex flex-wrap w-auto h-auto space-x-2 bg-teal-900 rounded-lg text-4xl justify-around p-6">
-                    <SiPython className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-180 "/>
-                    <SiPycharm className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiAnaconda className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiFirebase className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                  </span>
-                </div>teal
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl mt-1 transition duration-300 ease-in-out border-2 border-teal-500 hover:blur-0">
-          <img
-            src={require("../Assets/ARTS/NATURE.jpg")}
-            alt="blog article"
-            class="object-cover w-full h-full"
-            />
-          <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-90 transition duration-300 ease-in-out">
-            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
-              <h3 class="text-center items-center mt-36">
-                <a class="text-white xl:text-4xl text-2xl  text-center" href="https://github.com/TUNKSTUN/tunkstun1">
-                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
-                  TUNKSTUN
-                </a>
-              </h3>
-              <div className="hidden xl:block rounded-md bg-gray-700  translate-y-24 pb-2 w-[350px] items-center h-[450px] object-bottom transition ease-in-out delay-300 hover:-translate-y-16 hover:cursor-pointer  hover:bg-stone-900 hover:text-white p-2">
-                <div className="text-teal-400 font-bold tracking-widest text-base hover:text-inherit">HOVER ME👆</div>
-                <div className="text-white text-center grid flex-col space-y-2">
-                  <p className="flex-col text-sm mt-2">
-                   A Portfolio website, build using ReactJS, Firebase and Tailwindcss.
-                  </p>
-                  <p className="text-ms">Tech-Stack</p>
-                  <span className="flex flex-wrap w-auto h-auto space-x-2 bg-teal-900 rounded-lg text-4xl justify-around p-6">
-                    <SiReact className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-180 "/>
-                    <SiFirebase className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiTailwindcss className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class=" relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl mt-1 transition duration-300 ease-in-out border-2 border-teal-600 hover:blur-0">
-          <img
-            src={require("../Assets/ARTS/ETH.jpg")}
-            alt="blog article"
-            class="object-cover w-full h-full"
-            />
-          <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-90 transition duration-300 ease-in-out">
-            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex flex-col justify-center items-center">
-              <h3 class=" text-center items-center mt-36">
-                <a
-                  class="text-white xl:text-4xl text-2xl text-center"
-                  href="https://github.com/TUNKSTUN/Ethihax"
+      <div className="flex flex-col w-auto xl:w-2/3">
+        <div className="w-auto items-center justify-center flex flex-col p-5 ">
+          <div className="relative w-full xl:h-64 h-72 flex justify-center items-center bg-stone-800 border-spacing-3 border-amber-200 border-4 rounded-md transition:ease-in-out hover:border-amber-500">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className={`absolute transition-opacity duration-1000 ease-in-out w-full h-full ${
+                  index === currentProject ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <img
+                  src={project.image}
+                  alt={`${project.title} project`}
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-4 rounded-md transition:ease-in-out hover:border-amber-500">
+                  <a
+                    href={projects[currentProject].link} // Use the currentProject state to get the link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center w-full h-full justify-center"
                   >
-                  <span class="absolute inset-0 text-ms xl:text-xl tracking-widest"></span>
-                  ETHIHAX
-                </a>
-              </h3>
-
-              <div className="hidden xl:block rounded-md bg-gray-700  translate-y-24 pb-2 w-[350px] items-center h-[450px] object-bottom transition ease-in-out delay-300 hover:-translate-y-16 hover:cursor-pointer hover:bg-stone-900 hover:text-white p-2">
-                <div className="text-teal-600 font-bold tracking-widest text-base hover:text-inherit">HOVER ME👆</div>
-                <div className="text-white text-center grid flex-col space-y-2">
-                  <p className="flex-col text-sm mt-2">
-                    Developing a Personal Blog Website using React, Spring and Azure Cloud (Working Project)
-                  </p>
-                  <p className="text-ms">Tech-Stack</p>
-                  <span className="flex flex-wrap w-auto h-auto space-x-2 bg-teal-900 rounded-lg text-4xl justify-between p-6">
-                    <SiReact className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-180 "/>
-                    <SiSpringboot className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiFirebase className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiMicrosoftazure className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                    <SiMysql className="transition ease-in-out duration-500 hover:text-teal-200 hover:scale-150 hover:rotate-3 "/>
-                  </span>
-                  
+                    <h3 className="xl:text-3xl text-3xl text-amber-200">
+                      {project.title}
+                    </h3>
+                    <p className="xl:text-lg text-md text-white mt-2 font-[courier]">
+                      {project.description}
+                    </p>
+                    <div className="flex space-x-2 mt-2">
+                      {project.techStack.map((icon, idx) => (
+                        <span
+                          key={idx}
+                          className="text-amber-200 text-2xl xl:text-5xl"
+                        >
+                          {icon}
+                        </span>
+                      ))}
+                    </div>
+                  </a>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        </article>
+
+          <div className="flex justify-center mt-5 space-x-3">
+            {projects.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transform transition-all duration-300 ease-in-out 
+                ${
+                  index === currentProject
+                    ? "bg-amber-200 scale-125 border border-amber-100"
+                    : "bg-gray-400 scale-100 hover:scale-150"
+                } 
+                border-amber-100 border`}
+                onClick={() => setCurrentProject(index)}
+                aria-label={`Go to project ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="w-auto items-center justify-center flex flex-col p-5">
+          <h1 className="text-amber-200 font-[Courgette] text-4xl text-start items-start justify-start mt-20">~Artciles~</h1>
+          <div className="relative w-full xl:h-64 h-72 flex justify-center items-center bg-stone-800 border-spacing-3 border-amber-200 border-4 rounded-md transition:ease-in-out hover:border-amber-500">
+            {articles.map((article, index) => (
+              <div
+                key={index}
+                className={`absolute transition-opacity duration-1000 ease-in-out w-full h-full ${
+                  index === currentProject ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <img
+                  src={article.image}
+                  alt={`${article.title} article`}
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-4">
+                  <a
+                    href={articles[currentProject].link} // Use the currentProject state to get the link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center w-full h-full justify-center"
+                  >
+                    <h3 className="xl:text-3xl text-2xl text-amber-200">
+                      {article.title}
+                    </h3>
+                    <p className="xl:text-lg text-md text-white mt-2 font-[courier]">
+                      {article.description}
+                    </p>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-5 space-x-3">
+            {articles.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transform transition-all duration-300 ease-in-out 
+                ${
+                  index === currentProject
+                    ? "bg-amber-200 scale-125 border border-amber-100"
+                    : "bg-gray-400 scale-100 hover:scale-150"
+                } 
+                border-amber-100 border`}
+                onClick={() => setCurrentProject(index)}
+                aria-label={`Go to project ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-      <br/>
-                  </div>
     </div>
   );
 }

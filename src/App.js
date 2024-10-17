@@ -7,9 +7,8 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/footer";
 import { Parallax } from "react-parallax";
-import Blue from "./Assets/blue.gif";
+import APP from "./Assets/background_app.jpg"
 import Resume from "./Components/resume";
-import Leaf from "./Assets/leaf.gif";
 import Loader from "./Components/loader";
 
 function App() {
@@ -22,8 +21,8 @@ function App() {
 
         <About />
 
-        <Parallax bgImage={Leaf} strength={900} className="mb-20 border-teal-100 border-8 shadow-inner shadow-black">
-         <div className="backdrop-blur-lg">
+        <Parallax bgImage={APP} strength={100} className="mb-20 border-amber-200 border-8 shadow-inner shadow-black">
+         <div className="backdrop-blur-xl">
           <Projects />
           <Skills />
           </div> 

@@ -11,6 +11,12 @@
 
     font-family: 'youngr';
     src: url('./Assets/YoungRich.ttf');
+    font-family: 'CS';
+    src: url('./Assets/CS.ttf');
+    font-family: 'AS';
+    src: url('./Assets/AS.ttf');
+    font-family: 'QS';
+    src: url('./Assets/QhueenySignature.ttf');
 }
 
 @import url("./styles/output.css");
