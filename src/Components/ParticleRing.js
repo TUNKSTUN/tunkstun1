@@ -95,12 +95,12 @@ const Atom = ({ radius, speed, inclination, eccentricity }) => {
 // Component to manage multiple atoms with more varied orbital parameters
 const Atoms = () => {
   const orbitParams = useMemo(() => [
-    { radius: 6, speed: 0.5, inclination: -0.2, eccentricity: 0.1 },
-    { radius: 8.5, speed: 0.6, inclination: 0.4, eccentricity: 0.15 },
-    { radius: 9, speed: 0.5, inclination: -0.5, eccentricity: 0.4 },
-    { radius: 10.5, speed: 0.8, inclination: 0.15, eccentricity: 0.5 },
-    { radius: 16, speed: 0.2, inclination: -0.20, eccentricity: 2 },
-    { radius: 12.5, speed: 0.3, inclination: 0.37, eccentricity: 0.2 },
+    { radius: 6, speed: 0.2, inclination: -0.2, eccentricity: 0.1 },
+    { radius: 8.5, speed: 0.1, inclination: 0.4, eccentricity: 0.15 },
+    { radius: 9, speed: 0.15, inclination: -0.5, eccentricity: 0.4 },
+    { radius: 10.5, speed: 0.18, inclination: 0.15, eccentricity: 0.5 },
+    { radius: 16, speed: 0.12, inclination: -0.20, eccentricity: 2 },
+    { radius: 12.5, speed: 0.13, inclination: 0.37, eccentricity: 0.2 },
   ], []);
   
   return (
@@ -143,7 +143,7 @@ const Stars = () => {
 const styles = {
   container: {
     width: "100%",
-    height: "100vh",
+    height: "800px",
     overflow: "hidden",
     position: "relative",
     backgroundColor: "black",

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fef4d4a.css",
-    "main.js": "/static/js/main.92e547ba.js",
+    "main.css": "/static/css/main.cd517e1e.css",
+    "main.js": "/static/js/main.5baca201.js",
     "static/js/488.a366c85f.chunk.js": "/static/js/488.a366c85f.chunk.js",
     "static/media/Water_1.mp4": "/static/media/Water_1.255b9802637dc71cea8a.mp4",
     "static/media/Anim.gif": "/static/media/Anim.2afb47710163eb516086.gif",
@@ -9,7 +9,10 @@
     "static/media/white.mp4": "/static/media/white.8db5a5e5206002e7d97f.mp4",
     "static/media/2.jpg": "/static/media/2.075785f3fa0d124901b8.jpg",
     "static/media/background_app.jpg": "/static/media/background_app.8e78dbbfcb0e8e964a3d.jpg",
-    "static/media/w2edax.jpg": "/static/media/w2edax.32a264e85bb313626c1f.jpg",
+    "static/media/Cloud Security.jpg": "/static/media/Cloud Security.bd6421b962d45cd66cc8.jpg",
+    "static/media/w2edax.jpg": "/static/media/w2edax.0fe4d22e01a1a1699177.jpg",
+    "static/media/Ethical Hacking.jpg": "/static/media/Ethical Hacking.39d9f47703dd121d37e1.jpg",
+    "static/media/The power of network segmentation.jpg": "/static/media/The power of network segmentation.e3d481b95159085571c3.jpg",
     "static/media/NATURE.jpg": "/static/media/NATURE.5a693510ac658269735f.jpg",
     "static/media/az900.png": "/static/media/az900.28794c5a9e5b19b3c5b0.png",
     "static/media/CS.ttf": "/static/media/CS.8aed224bd4b961ae1e45.ttf",
@@ -21,16 +24,17 @@
     "static/media/AS.ttf": "/static/media/AS.2afe54ae8af208cc2e31.ttf",
     "static/media/YoungRich.ttf": "/static/media/YoungRich.e55054ac121da020135a.ttf",
     "static/media/QhueenySignature.ttf": "/static/media/QhueenySignature.2b698f3ecbe18762c21a.ttf",
+    "static/media/pomo.png": "/static/media/pomo.51f0376564c0be540fd5.png",
     "static/media/background_about.png": "/static/media/background_about.e037885d1de5f45c8009.png",
     "static/media/room.png": "/static/media/room.3e358370b4e41ec71ff1.png",
     "static/media/ccna.png": "/static/media/ccna.17102a8218a337da901a.png",
     "index.html": "/index.html",
-    "main.1fef4d4a.css.map": "/static/css/main.1fef4d4a.css.map",
-    "main.92e547ba.js.map": "/static/js/main.92e547ba.js.map",
+    "main.cd517e1e.css.map": "/static/css/main.cd517e1e.css.map",
+    "main.5baca201.js.map": "/static/js/main.5baca201.js.map",
     "488.a366c85f.chunk.js.map": "/static/js/488.a366c85f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fef4d4a.css",
-    "static/js/main.92e547ba.js"
+    "static/css/main.cd517e1e.css",
+    "static/js/main.5baca201.js"
   ]
 }

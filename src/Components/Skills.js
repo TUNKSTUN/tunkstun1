@@ -52,15 +52,15 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="flex flex-col px-5 space-y-2 h-auto xl:w-full  bg-transparent p-12 backdrop-blur-lg"
+      className="flex flex-col px-5 space-y-2 h-auto xl:w-full  bg-transparent p-12 mt-10 backdrop-blur-lg"
     >
-      <h1 className="xl:text-10xl text-4xl text-stone-900 text-start font-[Courgette]">
+      <h1 className="xl:text-10xl text-4xl text-stone-900 xl:text-amber-200 lg:text-stone-900 md:text-stone-900 text-start font-[Courgette]">
         👨‍💻Skills
       </h1>
       <div className="xl:grid grid-cols-2 xl:gap-2 flex flex-col space-y-2 xl:space-y-0 xl:mb-10 ">
-        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg font-mono xl:space-y-10 space-y-3 xl:p-5 p-3 rounded-md border-[1px] border-amber-400 py-10 transition ease-in-out duration-300 hover:border-white">
+        <div className="bg-stone-800 w-full h-full xl:text-2xl text-[90%] font-mono xl:space-y-10 space-y-3 xl:p-5 p-3 rounded-md border-[1px] border-amber-400 py-10 transition ease-in-out duration-300 hover:border-white">
           <h1
-            className="flex justify-between text-amber-400 xl:cursor-default cursor-pointer xl:text-2xl text-lg"
+            className="flex justify-between text-amber-400 xl:cursor-default cursor-pointer xl:text-2xl text-md"
             onClick={() => setIsOpen(!isOpen)}
           >
             &#123; Language Proficiency &#125;:
@@ -89,7 +89,7 @@ function Skills() {
             />
           </div>
           <p
-            className={`tracking-tight text-justify xl:text-base text-sm text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] hidden xl:block border-amber-300 ${
+            className={`tracking-tight text-justify text-[60%] text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] hidden xl:block border-amber-300 ${
               isOpen ? "block" : "hidden"
             }`}
           >
@@ -100,7 +100,7 @@ function Skills() {
             languages, showcasing my versatile coding skills.
           </p>
           <p
-            className={`tracking-tight text-justify xl:text-sm text-sm text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] xl:hidden block border-amber-300 ${
+            className={`tracking-tight text-justify text-[90%] text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] xl:hidden block border-amber-300 ${
               isOpen ? "block" : "hidden"
             }`}
           >
@@ -111,9 +111,9 @@ function Skills() {
             languages, showcasing my versatile coding skills.
           </p>
         </div>
-        <div className="bg-stone-800 w-full h-full xl:text-2xl text-lg text-start xl:p-5 p-3 xl:space-y-5 space-y-3 font-mono text-amber-100 rounded-md border-[1px] border-amber-400 py-10 transition ease-in-out duration-300 hover:border-white">
+        <div className="bg-stone-800 w-full h-full xl:text-2xl text-md text-start xl:p-5 p-3 xl:space-y-5 space-y-3 font-mono text-amber-100 rounded-md border-[1px] border-amber-400 py-10 transition ease-in-out duration-300 hover:border-white">
           <h1
-            className="flex justify-between text-amber-400 xl:cursor-default cursor-pointer"
+            className="flex justify-between text-amber-400 xl:cursor-default cursor-pointer text-[90%]  "
             onClick={() => setIsOpens(!isOpens)}
           >
             &#123; Technologies &#125;:{" "}
@@ -181,7 +181,7 @@ function Skills() {
             </div>
           </div>
           <p
-            className={`tracking-tight text-justify text-base text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] border-amber-300 hidden xl:block ${
+            className={`tracking-tight text-justify text-[60%] text-amber-100 bg-stone-700 p-2 rounded-sm border-[1px] border-amber-300 hidden xl:block ${
               isOpens ? "block" : "hidden"
             }`}
           >

@@ -1,32 +1,41 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Video from "../Assets/Video/white.mp4";
-import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa'; // Importing icons
+import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa'; 
 import { SiSignal } from 'react-icons/si';
 
 const Contact = () => {
   const form = useRef();
+  const [popupMessage, setPopupMessage] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_y2y2c3a', 'template_0uzknzn', form.current, 'roDAQSRS_JjqQtVXE')
       .then((result) => {
-          console.log(result.text);
-          alert("Message sent successfully");
+          setPopupMessage('Message sent successfully!');
+          setShowPopup(true);
       }, (error) => {
-          console.log(error.text);
+          setPopupMessage('Failed to send message. Please try again.');
+          setShowPopup(true);
       });
+
+    // Hide popup after 3 seconds
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   };
 
   return (
-    <div className="relative w-full h-screen xl:justify-around lg:justify-around  flex xl:items-stretch">
+    <div className="relative w-full h-screen flex justify-center items-center">
       <video className="absolute bottom-0 left-0 w-full h-full object-cover" autoPlay loop muted>
         <source src={Video} type="video/mp4" />
       </video>
 
-      <div id="contact" className="relative w-full max-w-4xl h-auto p-4 font-mono flex flex-col xl:flex-row md:flex-row xl:justify-around lg:justify-around gap-5 xl:gap-20">
-        <div className="flex flex-col justify-center items-center xl:w-1/3 bg-transparent p-6 text-white text-center">
+      <div id="contact" className="relative w-full max-w-6xl h-full p-4 font-mono flex flex-col xl:flex-row lg:flex-row justify-around items-center">
+        {/* Social Section */}
+        <div className="w-full lg:w-1/2 bg-transparent p-6 text-white text-center flex flex-col justify-center items-center">
           <h1 className="text-2xl lg:text-3xl xl:text-4xl font-[Courgette] font-bold mb-6 text-black">Socials</h1>
           <div className="flex justify-center space-x-4 mt-2 text-lg">
             <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -38,15 +47,15 @@ const Contact = () => {
             <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub className="text-4xl text-black hover:text-amber-500 transition duration-300" />
             </a>
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className="text-4xl text-black hover:text-amber-500 transition duration-300" />
             </a>
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://signal.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Signal">
               <SiSignal className="text-4xl text-black hover:text-amber-500 transition duration-300" />
             </a>
           </div>
           <div className="mt-4">
-            <h2 className="text-lg font-semibold text-black">Visit my website:</h2>
+            <h2 className="text-lg font-semibold text-black">Visit website:</h2>
             <a href="https://w2edax.web.app" target="_blank" rel="noopener noreferrer" className="text-amber-500 underline">
               w2edax.web.app
             </a>
@@ -54,8 +63,8 @@ const Contact = () => {
         </div>
 
         {/* Form Section */}
-        <div className="flex flex-col  w-full md:w-2/3 h-auto backdrop-blur-xl border-amber-900 rounded-xl justify-center p-6 text-white text-center">
-          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-[Courgette] font-bold mb-6 text-black">Let's Connect</h1>
+        <div className="w-full max-w-xl h-auto backdrop-blur-xl shadow-md shadow-slate-500 border-amber-900 rounded-xl justify-center p-6 text-white text-center flex flex-col">
+          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-[Courgette] font-bold text-black">Let's Connect</h1>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <input 
               type="text" 
@@ -64,7 +73,6 @@ const Contact = () => {
               required 
               placeholder='Name'
             />
-            
             <input 
               type="email" 
               name="user_email" 
@@ -72,7 +80,6 @@ const Contact = () => {
               required 
               placeholder='Email'
             />
-            
             <textarea 
               name="message" 
               rows="4" 
@@ -80,16 +87,22 @@ const Contact = () => {
               required 
               placeholder='Message'
             />
-            
             <button 
               type="submit" 
-              className="bg-amber-500 w-24 text-md p-2 rounded-full text-black border-2 border-amber-300 transition duration-300 hover:bg-amber-100 hover:text-amber-900 hover:scale-105"
+              className="bg-amber-300 w-24 text-md p-2 rounded-md text-black border-2 border-amber-500 transition duration-300 hover:bg-amber-400  hover:scale-105"
             >
               Submit
             </button>
           </form>
         </div>
       </div>
+
+      {/* Popup Notification */}
+      {showPopup && (
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white py-2 px-4 rounded-lg shadow-lg">
+          {popupMessage}
+        </div>
+      )}
     </div>
   );
 };

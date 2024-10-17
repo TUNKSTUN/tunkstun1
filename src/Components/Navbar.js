@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FaEnvelope, FaSuitcase, FaFileAlt } from 'react-icons/fa';
 import { HiHome } from "react-icons/hi"; 
-import { SiAboutdotme } from "react-icons/si"; 
 
 function Navbar() {
   const [show, setShow] = useState(true);
@@ -24,12 +23,12 @@ function Navbar() {
 
   return (
     <nav
-      className={`bg-stone-200 fixed top-0 w-full h-16 z-40 transition duration-500 ease-in-out transform ${
-        show
-          ? "block transition delay-100 hover:translate-y-0"
-          : "transition ease-in-out delay-100 -translate-y-16 hover:-translate-y-0 hover:cursor-pointer"
-      }`}
-    >
+    className={`bg-stone-200 fixed top-0 w-full h-16 z-40 transition-transform duration-300 ease-in-out border-b-1 border-amber-300 ${
+      show
+        ? "translate-y-0 border-b-4 border-amber-300" // Navbar is visible when scrolling up
+        : "-translate-y-14 border-b-4 border-amber-300" // Navbar is hidden when scrolling down
+    } hover:translate-y-0 hover:cursor-pointer`} // Hover brings it down smoothly
+  >
       <div
         id="home"
         className="bg-stone-900 backdrop-blur-sm h-full px-12 text-amber-200 flex xl:justify-between justify-center items-center transition ease-in-out hover:bg-amber-200 hover:text-stone-900 duration-100 border-b hover:border-b-amber-100"
@@ -45,12 +44,12 @@ function Navbar() {
             activeClass="active"
             className="block text-lg nav-class transition ease-in-out xl:hover:scale-y-105 cursor-pointer hover:text-stone-700 font-[QS] text-5xl"
           >
-            <h1>tunkstun</h1>
+            <h1>Tunkstun</h1>
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex space-x-6  xl:space-x-10 text-lg xl:text-3xl md:text-2xl lg:text-xl ">
+        <div className="flex space-x-10 xl:text-3xl text-2xl ">
           <Link
             to="hero"
             spy={true}
@@ -69,9 +68,11 @@ function Navbar() {
             offset={0}
             duration={1000}
             activeClass="active"
-            className="block active:text-amber-600 nav-class transition ease-in-out xl:hover:scale-105 cursor-pointer hover:text-amber-600"
+            className="block justify-center xl:text-[80%] text-[70%] font-bold items-center active:text-amber-600 nav-class transition ease-in-out xl:hover:scale-105 cursor-pointer hover:text-amber-600"
           >
-            <SiAboutdotme />
+            <span>
+              /me
+              </span>
           </Link>
           <Link
             to="projects"
