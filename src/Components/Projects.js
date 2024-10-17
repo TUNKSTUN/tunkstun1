@@ -244,7 +244,7 @@ function Projects() {
           </div>
         </div>
         <div className="w-auto items-center justify-center flex flex-col p-5">
-          <h1 className="text-amber-200 font-[Courgette] text-4xl text-start items-start justify-start mt-20">~Artciles~</h1>
+          <h1 className="text-amber-200 font-[Courgette] text-4xl text-start items-start justify-start mt-20">~Articles~</h1>
           <div className="relative w-full xl:h-64 h-72 flex justify-center items-center bg-stone-800 border-spacing-3 border-amber-200 border-4 rounded-md transition:ease-in-out hover:border-amber-500">
             {articles.map((article, index) => (
               <div
